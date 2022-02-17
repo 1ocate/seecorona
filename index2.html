@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160628674-1"></script>
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-160628674-1');
+    </script>
+    <script data-ad-client="ca-pub-2182311497739311" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="https://getbootstrap.com/docs/4.0/dist/js/bootstrap.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    <script type = "text/javascript" language = "javascript">
+       $(document).ready(function() {
+         function numberFormat(inputNumber) {
+             return inputNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+         }
+         $.ajax({
+              cache: false,
+              url: "./csv/number_status2.json",
+              dataType: "json",
+              success: function(status){
+                 $('#positif').text(numberFormat(status.positif));
+                 $('#positif_p').text('+'+status.positif_p);
+                 $('#sembuh').text(status.sembuh);
+                 $('#sembuh_p').text('+'+status.sembuh_p);
+                 $('#kematian').text(status.kematian);
+                 $('#kematian_p').text('+'+status.kematian_p);
+                 $('#p_kematian').text((status.kematian/status.positif*100).toFixed(1)+'%');
+                 $('#update').text(status.date+' Update');
+                 $('#w_positif').text(numberFormat(status.w_positif));
+                 $('#w_kematian').text(numberFormat(status.w_kematian));
+                 $('#w_sembuh').text(numberFormat(status.w_sembuh));
+               }
+          });
+
+            $.ajax({
+                  cache: false,
+                  url: "./csv/detik.json",
+                  dataType: "json",
+                  success: function(detik){
+                       $.each(detik, function (index, item){
+                       $('#detiknews').append('<div class="media text-muted pt-3 m-1">'
+                       + '<a href='+item.link+'><img src='+item.img+'></a>'
+                       + '<p class="media-body pb-3 mb-0 big lh-125 border-bottom border-gray">'
+                       + '<strong class="d-block text-gray-dark">'+item.category+'</strong>'
+                       + '<a href='+item.link+'>'+item.title+'</a></br>'
+                       + '<span class="date">'+item.date+'</span>'
+                       + '</p>'
+                       + '</div>');
+                        });
+                  }
+
+                });
+
+
+                var t =$('#province').DataTable( {
+                    "processing": false,
+                    "paging":   false,
+                    "ordering": true,
+                    "info":     false,
+                    "ajax": "./csv/province.json",
+                    "columns": [
+                        { "data": "Id" },
+                        { "data": "Province" },
+                        { "data": "Positive" },
+                        { "data": "Death" },
+                        { "data": "Cure" }
+                    ],
+                    "columnDefs": [
+                          {
+
+                              "render": function ( data, type, row ) {
+                                if ( type === "sort" || type === 'type' ) {
+                                  return data;
+                                }
+                                else {
+                                  return data +'<br />(<span class=red>+'+ row['Positive_p']+'</span>)';
+                                }
+
+                              },
+                              "targets": 2
+                          },
+                          {
+                              "render": function ( data, type, row ) {
+                                if ( type === "sort" || type === 'type' ) {
+                                  return data;
+                                }
+                                else {
+                                  return data +'<br />(<span class=red>+'+ row['Death_p']+'</span>)';
+                                }
+
+                              },
+                              "targets": 3
+                          },
+                          {
+                              "render": function ( data, type, row ) {
+                                if ( type === "sort" || type === 'type' ) {
+                                  return data;
+                                }
+                                else {
+                                  return data +'<br />(<span class=green>+'+ row['Cure_p']+'</span>)';
+                                }
+
+                              },
+                              "targets": 4
+                          },
+                          {
+                              targets: 1,
+                              className: 'mdl-data-table__cell--non-numeric'
+                          },
+                          {
+                              targets: [2,3,4],
+                              className: 'text-center'
+                          },
+                          {
+                              "searchable": false,
+                              "orderable": false,
+                              "targets": 0
+                          }
+
+                      ],
+                      "order": [[ 1, 'asc' ]]
+
+
+                }
+              );
+              t.on( 'order.dt search.dt', function () {
+                  t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+                      cell.innerHTML = i+1;
+                  } );
+              } ).draw();
+
+
+
+
+
+
+
+       });
+    </script>
+
+    <script>
+
+    </script>
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="corona, indonesia, sembuh, positif, virus, corona19, status, corona-19, Kematian, Disembuhkan, Persentase Kematian, Telah Diperiksa, Diperiksa, Negatif, See Corona virus, corona today indonesia, Corona di Indonesia,kasus">
+    <meta name="description" content="Status update Virus Corona ( COVID -19) Pertama di Indonesia,  terdapat tabel dan informasi seputar situasi terkini yang membantu anda mengetahui status dan perkembangan Virus Corona ( COVID -19 ).">
+
+    <title>Virus Corona19 Status Indonesia</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+
+      .logo {margin-right:5px;}
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .navbar-nav
+      {
+        display:flex; !important
+      }
+
+      .red {
+        color:red;
+      }
+      .green {
+        color:green;
+      }
+      .from {
+        text-align: left;
+      }
+      .update {
+        font-size:1em;
+      }
+
+      #detiknews img {
+        max-width:117px;
+        margin-right: 20px;
+      }
+
+      h2 img {max-width:50px; margin-right: 20px;}
+
+      @media ( min-width: 768px ) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+      #num_box {
+        margin:50px 0;
+        display:flex;
+        flex-wrap: wrap;
+      }
+      #num_box div {
+        margin:20px 0;
+      }
+      #num_box .cor-4 {
+        flex: 0 0 25%;
+      }
+      #num_box .cor-3 {
+          flex: 0 0 33.33%;
+      }
+      #num_box .current {
+        font-size:2em;
+      }
+      #num_box .change {
+        font-size:1em;
+      }
+      .chart_box {margin:50px 0; overflow:hidden; display:flex; flex-wrap: wrap;}
+      .chart_box div { margin:0 auto; flex: 0 0 33.3%;}
+
+      #barChart {margin-bottom:25px;}
+      #subChart {margin-bottom:25px;}
+      #table_div {margin:10px 0;}
+
+
+
+      }
+      @media ( max-width: 768px ) {
+
+        .navbar-nav
+        {
+          display:flex; !important;
+          flex-direction:row; !important;
+        }
+        .navbar-nav li
+        {
+          margin-left:10px;
+        }
+
+
+        #num_box {
+          padding:10px 0;
+          display: flex;
+          flex-wrap: wrap;
+          text-align:center;
+        }
+        #num_box div {
+          margin: 20px auto 0;
+        }
+        #num_box .current {
+          font-size:2em;
+        }
+        #num_box .change {
+          font-size:1em;
+        }
+
+        #num_box .cor-4 {
+          flex: 0 0 25%;
+        }
+        #num_box .cor-3 {
+            flex: 0 0 33.33%;
+        }
+        #num_box h3 {
+          text-align:center;
+          font-size:1.2em;
+        }
+        .chart_title {margin:40px 0;}
+        .chart_box {margin:0px 0;}
+        .chart_box div { margin:25px auto;}
+
+        #table_div {margin:25px 0;}
+
+
+
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/billboard.min.css">
+
+
+
+    <!--Load the AJAX API-->
+    <script src="js/billboard.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['table']});
+      google.charts.setOnLoadCallback(drawTable);
+
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Provinsi','Positif','Kematian','sembuh');
+        data.addColumn('string', 'Kabupaten / Kota');
+        data.addColumn('number', 'Positif');
+        data.addRows([
+          ['DKI Jakarta', '', '{v: 10000}']
+
+        ]);
+        var table = new google.visualization.Table(document.getElementById('Sebaran'));
+        table.draw(data, {allowHtml: true, showRowNumber: true, width: '100%', height: '100%'});
+      }
+    </script>
+ </head>
+  <body>
+    <nav id="navbar-example2" class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+
+  <img class="logo" src="./favicon/favicon-32x32.png" alt="logo"> <a class="navbar-brand" href="#">SEE CORONA</a>
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#news">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+</nav>
+
+<main role="main" class="container"  data-spy="scroll" data-target="#navbar-example2" data-offset="0" >
+
+  <div class="starter-template">
+    <h1>Virus Corona-19 Status</h1>
+    <p class="update">2020-03-14 01:00 WIB Update </p>
+    <h2 class="m-5"><img src="img/global.jpg" />Global</h2>
+    <!-- <div id="chart_div"></div>-->
+    <div class="row m-4" id="w_num_box">
+     <div class="col-md-4 mb-3" id="">
+       <h3 class="mb-4">Positive</h3>
+       <span id="w_positif" class="current mb-4 display-4">69</span></br>
+       <!--<span class="red change">+35</span>-->
+     </div>
+     <div class="col-md-4 mb-3" id="">
+       <h3 class="mb-4">Kematian</h3>
+       <span id="w_kematian" class="red current display-4">4</span></br>
+        <!--<span class="red change">+3</span>-->
+     </div>
+     <div class="col-md-4 mb-3" id="">
+       <h3 class="mb-4">Sembuh</h3>
+       <span id="w_sembuh" class="current green display-4">5</span></br>
+
+     </div>
+    </div>
+   <h2 class="m-5"><img src="img/id.jpg" />Indonesia</h2>
+   <div id="num_box">
+     <div class="cor-4" id="num_positive">
+       <h3>Positive</h3>
+       <span id="positif" class="current">69</span></br>
+       <span class="red change">+35</span>
+     </div>
+     <div class="cor-4" id="num_death">
+       <h3>Death</h3>
+       <span id="kematian" class="red current">4</span></br>
+       <span class="red change">+3</span>
+     </div>
+     <div class="cor-4" id="num_complte">
+       <h3 class="">Cure</h3>
+       <span id="sembuh" class="current green">5</span></br>
+
+     </div>
+     <div class="cor-4" id="num_death">
+       <h3>Death %</h3>
+       <span id="p_kematian" class="current">0%</span>
+     </div>
+     <div class="cor-3" id="num_check">
+       <h3>Checked</h3>
+       <span id="t_diperiksa" class="current">986</span>
+     </div>
+     <div class="cor-3" id="num_checking">
+       <h3>Process</h3>
+       <span class="current">0</span>
+     </div>
+     <div class="cor-3" id="num_negative">
+       <h3>Negative</h3>
+       <span class="current">917</span>
+     </div>
+
+  </div>
+</div>
+
+  <p class="from">
+      * Data from: </br>
+      <a href="https://infeksiemerging.kemkes.go.id" tagtet="_blank">https://infeksiemerging.kemkes.go.id</a> <br />
+      <a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" tagtet="_blank">https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia/</a> <br />
+      <a href="https://coronaboard.kr" tagtet="_blank">https://coronaboard.kr</a> <br />
+  </p>
+</div>
+
+
+</main><!-- /.container -->
+<main id="timeline" role="main" class="container">
+  <div class="row">
+    <div class="col-md-8 blog-main">
+      <h3 class="pb-4 mb-4 font-italic border-bottom">
+        Garis waktu
+      </h3>
+
+      <div class="blog-post" id="17_mar">
+        <h2 class="blog-post-title">17 Maret</h2>
+        <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+        <ul>
+          <li class="mb-3">Menanggapi meningkatnya jumlah kasus COVID-19 di Indonesia, Dewan Nasional Indonesia untuk Penanggulangan Bencana mengumumkan masa darurat selama 91 hari, efektif hingga 29 Mei 2020.</li>
+          <li class="mb-3">Pemerintah Indonesia mengumumkan 38 kasus baru COVID-19, sehingga jumlah total infeksi menjadi 172.</li>
+          <li class="mb-3">1 kasus pulih, total 9 kasus pulih.</li>
+          <li class="mb-3">2 pasien meninggal (1 di Semarang dan satu lainnya masih belum diketahui), total 7 kematian.</li>
+          <li class="mb-3">Ada kesalahan dalam penghitungan kematian. Menteri Kesehatan melaporkan bahwa jumlah total kematian masih 5, sama seperti pada 14 Maret sementara dua kematian baru dilaporkan pada pagi hari oleh Gubernur Jawa Tengah dan Gubernur Banten. Jumlah total kematian harus 7.</li>
+          <li class="mb-3">Kementerian Luar Negeri melarang pelancong yang masuk atau transit di Indonesia yang telah berada di salah satu dari 8 negara yang disebutkan dalam 14 hari terakhir. Negara-negara itu adalah Iran, Italia, Kota Vatikan, Spanyol, Prancis, Jerman, Swiss, dan Inggris. </li>
+        </ul>
+
+
+      </div><!-- /.blog-post -->
+
+
+    </div><!-- /.blog-main -->
+
+    <aside class="col-md-4 blog-sidebar">
+      <!--<div class="p-4 mb-3 bg-light rounded">
+        <h4 class="font-italic">About</h4>
+        <p class="mb-0">Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+      </div>
+    -->
+
+      <div class="p-4">
+        <h4 class="font-italic">Archives</h4>
+        <ol class="list-unstyled mb-0">
+          <li><a href="#17_mar">17 Maret 2020</a></li>
+        </ol>
+      </div>
+
+      <!--<div class="p-4">
+        <h4 class="font-italic">Elsewhere</h4>
+        <ol class="list-unstyled">
+          <li><a href="#">GitHub</a></li>
+          <li><a href="#">Twitter</a></li>
+          <li><a href="#">Facebook</a></li>
+        </ol>
+      </div>-->
+    </aside><!-- /.blog-sidebar -->
+
+  </div><!-- /.row -->
+
+</main><!-- /.container -->
+
+  <footer class="mt-5 bd-footer text-muted bg-dark">
+    <div class="container-fluid p-3 p-md-5">
+      <p class="text-center d-block text-white">
+          Anda dapat membantu untuk melaporkan & memperbaiki informasi yang salah melalui email ke<br/>
+
+          <a href="#">coronasee@gmail.com</a>.<br /><br />
+
+          Jika Anda mengirim email saran /  [Laporan Konfirmasi] dan mengirimkannya dengan file akan mempercepat update data kami.<br />
+          (Harap dimaklumi bahwa semakin banyak e-mail  yang masuk , sehingga dengan mohon maaf kami tidak dapat membalasnya satu per satu). <br /><br />
+
+          👩💻 Sedang dikembangkan👨💻 <br />
+
+          1) Grafik deret waktu berdasarkan wilayah ??<br /><br />
+
+          * Perhatian: Statistik yang disediakan di situs ini kami perbarui  informasi website dari referensi link Kemenkes, <br />
+          atau acuan website  domestik dan internasional, <br /><br />
+
+          Kami menyatakan  bahwa kutipan / Link berita pihak ketiga  sepenuhnya diluar tanggung jawab kami, <br />
+          Dimana atas kutipan dan penggunaan konten yang disediakan di situs ini merupakan website referensi berita seputar corona terkini. <br />
+      </p>
+    </div>
+  </footer>
+
+      <table id="province" class="table table-striped table-bordered" >
+        <thead>
+            <tr>
+                <th></th>
+                <th>Province</th>
+                <th>Positive</th>
+                <th>death</th>
+                <th>cure</th>
+            </tr>
+        </thead>
+      </table>
+
+
+
+</body>
+</html>

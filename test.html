@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js" ></script>
+<script type="text/javascript">
+jQuery(function ($) {
+      // declare global
+        var slider_array = new Array();
+
+        // launch bxslider
+        $('.bxslider').each(function(i){
+          slider_array[i] = $(this).bxSlider({
+            slideWidth: 242,
+            slideHeight: 180,
+            slideMargin: 10,
+            minSlides: 4,
+            maxSlides: 4,
+            captions: true
+          });
+        });
+
+
+        // bind controls on custom controls, and run functions on every slider
+        $('.bxslider-controls a').bind('click', function(e) {
+          e.preventDefault();
+
+          if($(this).hasClass('pull-left')) {
+            $.each(slider_array, function(i,elem){
+              elem.goToPrevSlide();
+            });
+
+          } else if($(this).hasClass('pull-right')) {
+            $.each(slider_array, function(i,elem){
+              elem.goToNextSlide();
+            });
+          }
+
+        });
+        //end
+
+      });
+</script>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<style>
+.container{width:1000px;margin:0 auto;}
+.wdgBox {display:table;margin:0 auto;text-align:center;width:100%;}
+.wdgBox ul,
+.wdgBox dl{margin:0;padding:0;}
+.wdgBox dd,
+.wdgBox li{list-style:none;display:inline-block;}
+.wdgBox a{display:block;height:100%;text-decoration:none;color:#333;}
+.wdgBox img {max-width:176px; max-height:176px;}
+.wdgBox input{display:none;}
+.wdgBox label{display:inline-block;border:1px solid #088486;border-radius:1rem;overflow:hidden;width:65px;height:25px;line-height:25px;text-align:center;margin:10px;transition:all .3s;cursor:pointer;}
+.wdgBox input:checked+label{background:#088486;color:#fff;}
+.wdgBox li{width:242px;background:#eee;position:relative;}
+.wdgBox p {float:left; display:block;}
+.wdgBox section {
+  position:absolute;
+  display: block;
+  padding: 20px 0 0;
+  /*border-top: 1px solid #ddd;*/
+  text-align:left;
+  z-index:1;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="container">
+<div class="wdgBox">
+
+		<!--
+		<ul>
+			<li><a href="#tab1">전체</a></li>
+			<li><a href="#tab2">20평대</a></li>
+			<li><a href="#tab3">30평대</a></li>
+			<li><a href="#tab4">40평대</a></li>
+		</ul>
+		-->
+
+		<section id="content1">
+			<ul class="bxslider">
+				<li>
+					<a href="">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAB4CAQAAACTbf5ZAAAAiklEQVR42u3PMQEAAAwCoNm/9Cr4Cw3IjYmwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsHDrASUpAHnJhbktAAAAAElFTkSuQmCC" />
+						<p>Hand Sanitizer Gel 1 Liter)<br/><span style="color:orange;font-weight:bold;">RP 150.000</span></p>
+					</a>
+				</li>
+				<li>
+					<a href="" style="background:url('');">
+						<p>C02 - 33.86평 (111.94㎡)</p>
+					</a>
+				</li>
+				<li>
+					<a href="" style="background:url('');">
+						<p>C03 - 33.86평 (111.94㎡)</p>
+					</a>
+				</li>
+				<li>
+					<a href="" style="background:url('');">
+						<p>C04 - 33.86평 (111.94㎡)</p>
+					</a>
+				</li>
+				<li>
+					<a href="" style="background:url('');">
+						<p>C05 - 33.86평 (111.94㎡)</p>
+					</a>
+				</li>
+				<li>
+					<a href="" style="background:url('');">
+						<p>C06 - 33.86평 (111.94㎡)</p>
+					</a>
+				</li>
+				<li>
+					<a href="" style="background:url('');">
+						<p>C07 - 33.86평 (111.94㎡)</p>
+					</a>
+				</li>
+				<li>
+					<a href="" style="background:url('');">
+						<p>C08 - 33.86평 (111.94㎡)</p>
+					</a>
+				</li>
+			</ul>
+
+		</section>
+	<div class="bxslider-controls">
+		<a class="pull-left" href="#"></a>
+		<a class="pull-right" href="#"></a>
+	</div>
+	</div>
+	<!--
+	<div class="contentBox">
+		<dl id="content1">
+			<dt>전체</dt>
+			<dd>
+				<ul>
+					<li>
+						<a href="" style="background:url('');">
+							<p>C01 - 33.86평 (111.94㎡)</p>
+						</a>
+					</li>
+				</ul>
+			</dd>
+		</dl>
+		<dl id="content2">
+			<dt>20평대</dt>
+			<dd>ContentsDumy</dd>
+		</dl>
+		<dl id="content3">
+			<dt>30평대</dt>
+			<dd>ContentsDumy</dd>
+		</dl>
+		<dl id="content4">
+			<dt>40평대</dt>
+			<dd>ContentsDumy</dd>
+		</dl>
+	</div>
+	-->
+</div>
+</div>
+</body>
+</html>

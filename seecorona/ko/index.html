@@ -1,0 +1,1892 @@
+<!doctype html>
+<html lang="ko-KR">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160628674-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-160628674-1');
+    </script>
+    <script data-ad-client="ca-pub-2182311497739311" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="corona, indonesia, sembuh, positif, virus, corona19, status, corona-19, Kematian, Disembuhkan, Persentase Kematian, Telah Diperiksa, Diperiksa, Negatif, See Corona virus, corona today indonesia, Corona di Indonesia,kasus, 코로나, 인도네시아, 격리해제, 확진자, 바이러스, 코로나19, 상태, 사망자, 격리중, 치사율, 검사, 검사중, 결과음성, 오늘 인도네시아 코로나 현황, 코로나 인도네시아, 환자">
+    <meta name="description" content="인도네시아에 거주하는 한국 교민을 위한 코로나 19 실시간 발생 현황 및 뉴스 대사관 공지사항을 함께 볼 수 있는 사이트 입니다. ">
+    <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+
+    <title>인도네시아 코로나 19 실시간 발생 현황 Virus Corona19 Status Indonesia </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+    <link rel="manifest" href="../favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        padding-top: 5rem;
+      }
+      .hidden {
+        display:none;
+      }
+      .logo {margin-right:5px;}
+
+      .navbar-nav
+      {
+        display:flex !important;
+        flex-direction:row !important;
+      }
+      .navbar-nav li
+      {
+        margin-left:10px;
+      }
+
+      .starter-template {
+        padding: 3rem 0rem;
+
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .red {
+        color:red;
+      }
+      .green {
+        color:green;
+      }
+      .from {
+        width:100%;
+        text-align: left;
+      }
+      .from a{
+        font-size:1rem;
+        max-width:10px;
+        text-align: left;
+      }
+      .update {
+        font-size:1em;
+      }
+      .paging_simple {
+        display:none !important;
+      }
+      #map_indonesia_cover{
+        overflow:hidden;
+        width:100%;
+        max-height:410px;
+      }
+      #map_indonesia{
+        margin-top:-110px;
+      }
+      /*#map_indonesia svg path {
+        stroke-width:1px;
+        stroke: #F5F6F6;
+      }*/
+      #map_indonesia svg path[fill^='none'] {
+        stroke-width:0px;
+      }
+
+      /*.dataTables_scrollHeadInner {
+        max-width:800px !important;
+        margin:0 auto;
+      }
+      .dataTable {
+        max-width:800px !important;
+      }
+      .dataTables_scrollBody {
+        border-bottom:0 !important;
+      }*/
+      #world_list {
+        max-width:800px;
+      }
+
+
+      #province {
+        max-width:800px;
+      }
+
+
+      #news a {
+        font-weight:bold;
+        color:#343a40;
+      }
+
+      h2 img {max-width:45px; margin-right: 20px;}
+      .banner img {width:100%; max-width:800px;}
+
+      @media ( min-width: 768px ) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+      #w_num_box .current {
+        font-size:2em;
+      }
+      #num_box {
+        margin:0px 0 50px;
+        display:flex;
+        flex-wrap: wrap;
+      }
+      #num_box div {
+        margin:20px 0;
+      }
+      #num_box .cor-4 {
+        flex: 0 0 25%;
+      }
+      #num_box .cor-3 {
+          flex: 0 0 33.33%;
+      }
+
+      #num_box .current {
+        font-size:2em;
+      }
+      #num_box .change {
+        font-size:1em;
+      }
+      #more {
+        width:50%;
+      }
+
+      .dataTables_filter {
+        margin:0 auto;
+        float:none !important;
+        max-width:800px;
+      }
+      #world_list {max-width:800px;}
+      #province {max-width:800px;}
+      #Sebaran { margin:0 auto; padding:0 -15px; max-width:500px;}
+      .chart_box {margin:50px 0; overflow:hidden; display:flex; flex-wrap: wrap;}
+      .chart_box div { margin:0 auto; flex: 0 0 33.3%;}
+
+
+
+      #barChart {margin-bottom:25px;}
+      .Chart {width:100%; min-height:500px; margin-bottom:25px;}
+      #Chart {width:100%; min-height:500px; margin-bottom:25px;}
+      #Chart2 {width:100%; min-height:500px; margin-bottom:25px;}
+      #Chart3 {width:100%; min-height:500px; margin-bottom:25px;}
+
+      #table_div {margin:10px 0;}
+      #home {
+              margin-top:-100px;
+              padding-top:100px;
+            }
+      #news {
+        padding-top:60px;
+        margin-top:-60px;
+      }
+      #btn_news_more {
+        width:50%;
+      }
+      #btn_news_ko_more {
+        width:50%;
+      }
+      #news img {
+        margin-right: 20px;
+        border-radius :8px;
+        min-width:150px;
+      }
+      #news strong {
+        font-size:1.5em;
+      }
+
+      #data {padding-top:50px; padding-bottom:40px;}
+      #timeline{
+            margin-top:-20px;
+            padding-top:70px;
+        }
+      #timeline .blog-post{ margin-top:-70px; padding-top:70px;}
+      }
+
+
+      @media ( max-width: 768px ) {
+
+        #w_num_box h3 {
+          text-align:center;
+          font-size:1.2em;
+        }
+        #w_num_box .col {
+          padding:0;
+          margin:0 auto;
+        }
+
+
+        #num_box {
+          padding:0px 0;
+          margin:0 -20px;
+          display: flex;
+          flex-wrap: wrap;
+          text-align:center;
+        }
+        #num_box div {
+          margin: 0px auto 0;
+        }
+        #num_box .title {
+          font-size:1em;
+        }
+        #num_box .current {
+          font-size:1.7em;
+        }
+        #num_box .change {
+          font-size:1em;
+        }
+
+        #num_box .cor-4 {
+          flex: 0 0 25%;
+          max-width:117px;
+        }
+        #num_box .cor-3 {
+            flex: 0 0 33.33%;
+        }
+        #num_box h3 {
+          text-align:center;
+          font-size:1.2em;
+        }
+
+        #world_list {margin:0 -15px;}
+        #province {margin:0 -15px;}
+
+        #more {
+          width:100%;
+        }
+        #map_indonesia_cover{
+          margin-top:-30px;
+          max-height:250px;
+
+        }
+        #map_indonesia {
+          margin:-10px 0px 0;
+        }
+        .chart_title {margin:40px 0;}
+        .chart_box {margin:0px 0;}
+        .chart_box div { margin:25px auto;}
+        .Chart {min-height:300px; width:100%;}
+
+        #Chart {min-height:300px; width:100%;}
+        #Chart2 {min-height:300px; width:100%;}
+        #Chart3 {min-height:300px; width:100%;}
+
+        #table_div {margin:25px 0;}
+
+        #home {
+                margin-top:-150px;
+                padding-top:150px;
+              }
+        #btn_news_more {
+          width:100%;
+        }
+        #btn_news_ko_more {
+          width:100%;
+        }
+        #news {padding-top:60px;}
+        #news img {
+          max-width:100px;
+          margin-right:10px;
+          border-radius:8px;
+        }
+        #news span {
+
+          font-size:0.8em;
+        }
+
+        #data {margin-top:-60px; padding-top:70px; }
+        .mdl-data-table__cell--non-numeric {
+          /*white-space:normal !important;*/
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+
+
+
+
+    <!--Load the AJAX API-->
+    <!--<script>
+
+      if (window.XMLHttpRequest) {
+        // code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+      } else {  // code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      xmlhttp.onreadystatechange=function() {
+        if (this.readyState==4 && this.status==200) {
+          document.getElementById("rssOutput").innerHTML=this.responseText;
+        }
+      }
+      xmlhttp.open("GET","getress.php?q=Google",true);
+      xmlhttp.send();
+
+    </script>-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="../js/bootstrap.min.js" ></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.20/fh-3.1.6/sc-2.0.1/datatables.min.css"/>
+    <script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.20/fh-3.1.6/datatables.min.js"></script>
+    <script src="../js/echarts-en.min.js"></script>
+    <script src="../js/moment-with-locales.min.js"></script>
+    <script type='text/javascript' src='https://www.google.com/jsapi'></script>
+    <script type='text/javascript'>
+           google.load('visualization','1', {'packages': ['geochart']});
+           google.setOnLoadCallback(drawRegionsMap);
+
+         function drawRegionsMap() {
+          var jsonData = $.ajax({
+              url: "../csv/geo_pro_ko.json",
+              dataType: "json",
+              async: false
+              }).responseText;
+
+          // Create our data table out of JSON data loaded from server.
+          var data = new google.visualization.DataTable(jsonData);
+          var options = {
+              'title':'Map',
+              'region':'ID',
+              'resolution':'provinces',
+              'legend':false,
+              'datalessRegionColor': 'transparent',
+              'defaultColor': '#F5F6F6',
+              'colorAxis': {colors: ['#FBEFEF','#FE0000','#DF0101'],
+              /*'chartArea': { left: 0, top: 0, bottom: 0 },*/
+              'height': 300
+
+          }};
+
+
+          var container = document.getElementById('map_indonesia');
+          var geochart = new google.visualization.GeoChart(container);
+          geochart.draw(data, options);
+          $('#province').DataTable().fixedHeader.adjust();
+      };
+    </script>
+    <script type = "text/javascript" language = "javascript">
+       $(document).ready(function() {
+         function numberFormat(inputNumber) {
+             return inputNumber.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+         }
+
+         function numberToKorean(number) {
+           var inputNumber = number < 0 ? false : number;
+           var unitWords = ["","0","백","천", "만", "", "백만", "천만", "억", "조", "경"];
+           var splitUnit = 10;
+           var splitCount = unitWords.length;
+           var resultArray = [];
+           var resultString = "";
+
+           for (var i = 0; i < splitCount; i++) {
+             var unitResult =
+               (inputNumber % Math.pow(splitUnit, i + 1)) / Math.pow(splitUnit, i);
+             unitResult = Math.floor(unitResult);
+             if (unitResult > 0) {
+               resultArray[i] = unitResult;
+             }
+           }
+           for (var i = 0; i < resultArray.length; i++) {
+             if (!resultArray[i]) continue;
+             resultString = String(resultArray[i]) + unitWords[i] + resultString;
+           }
+           return resultString;
+         }
+
+         function clearconsole()
+         {
+           console.log(window.console);
+           if(window.console )
+           {
+             console.clear();
+           }
+         }
+         //clearconsole();
+
+         $.ajax({
+              cache: false,
+              url: "../csv/world.json",
+              dataType: "json",
+              success: function(status){
+                $('#positif').text(numberFormat(status.positif));
+                $('#positif_p').text('+'+status.positif_p);
+                $('#sembuh').text(numberFormat(status.sembuh));
+                $('#sembuh_p').text('+'+status.sembuh_p);
+                $('#kematian').text(numberFormat(status.kematian));
+                $('#kematian_p').text('+'+status.kematian_p);
+                $('#p_kematian').text((status.kematian/status.positif*100).toFixed(1)+'%');
+                $('#update').text(moment(status.date).locale('ko').format('LLLL')+' WIB Update');
+                $('#w_positif').text(numberFormat(status.w_positif));
+                $('#w_positif_p').text('+'+numberFormat(status.w_positif_p));
+                $('#w_kematian').text(numberFormat(status.w_kematian));
+                $('#w_kematian_p').text('+'+numberFormat(status.w_kematian_p));
+                $('#w_sembuh').text(numberFormat(status.w_sembuh));
+                $('#w_sembuh_p').text('+'+numberFormat(status.w_sembuh_p));
+                $('#wp_kematian').text((status.w_kematian/status.w_positif*100).toFixed(1)+'%');
+               }
+          });
+
+            $.ajax({
+                  cache: false,
+                  url: "../csv/google_news.json",
+                  dataType: "json",
+                  success: function(google){
+                       $.each(google, function (index, item){
+                       $('#google_news').append('<div class="media text-muted pt-2 pb-2 m-1 hidden">'
+                       + '<a href='+item.link+'><img src='+item.img+' srcset="'+item.img_s+'"></a>'
+                       + '<p class="media-body pb-3 mb-0 big lh-125 ">'
+                       + '<a href='+item.link+'><strong class="d-block text-gray-dark">'+item.title+'</strong></a>'
+                       + '<span class="n_site">'+item.site+'</span> '
+                       + '<span class="date">'+moment(item.date).locale('ko').startOf('hour').fromNow()+'</span>'
+                       + '</p>'
+                       + '</div>'
+                       );
+                       //$('#google_news img' ).attr('srcset',item.img_s);
+
+                      });
+                      function loadMore(){
+                        $("#google_news .hidden").slice(0,5).removeClass("hidden");
+                      }
+                      loadMore();
+                      $("#btn_news_more").on("click",loadMore);
+                      if (!$("#google_news div").hasClass('hidden')) {
+                        $("#btn_news_more").css("display","none");
+                      }
+                  }
+              });
+
+              $.ajax({
+                    cache: false,
+                    url: "../csv/google_news_ko.json",
+                    dataType: "json",
+                    success: function(google){
+                         $.each(google, function (index, item){
+                         $('#google_news_ko').append('<div class="media text-muted pt-2 pb-2 m-1 hidden">'
+                         + '<a href='+item.link+'><img src='+item.img+' srcset="'+item.img_s+'"></a>'
+                         + '<p class="media-body pb-3 mb-0 big lh-125 ">'
+                         + '<a href='+item.link+'><strong class="d-block text-gray-dark">'+item.title+'</strong></a>'
+                         + '<span class="n_site">'+item.site+'</span> '
+                         + '<span class="date">'+moment(item.date).locale('ko').startOf('hour').fromNow()+'</span>'
+                         + '</p>'
+                         + '</div>'
+                         );
+                         //$('#google_news img' ).attr('srcset',item.img_s);
+
+                        });
+                        function loadMore(){
+                          $("#google_news_ko .hidden").slice(0,10).removeClass("hidden");
+                        }
+                        loadMore();
+                        $("#btn_news_ko_more").on("click",loadMore);
+                        if (!$("#google_news_ko div").hasClass('hidden')) {
+                          $("#btn_news_ko_more").css("display","none");
+                        }
+                    }
+                });
+
+
+              $('#more').on( 'click', function () {
+                  var VisibleRows = $('#world_list>tbody>tr:visible').length;
+                  var info = w.page.info();
+                  var i = VisibleRows + 20;
+                  w.page.len( i ).draw();
+                  if ( i > info.recordsTotal) {
+                    var i = info.recordsTotal;
+
+                    $('#more').css("display","none");
+                  }
+                  $('#more').html('더 보기 ('+i+'/'+info.recordsTotal+')')
+
+              } );
+
+
+
+              var w = $('#world_list').DataTable( {
+                  "fixedHeader": {
+                    "header": true,
+                    "headerOffset": $('#navbar1').outerHeight()
+                  },
+                  "responsive": true,
+                  "bLengthChange": false,
+                  "pageLength": 20,
+                  "processing": false,
+                  "paging":   true,
+                  "pagingType": "simple",
+                  "ordering": true,
+                  "info":     false,
+                  "language": {
+                    //"info": "(_END_/_TOTAL_)",
+                    "url": "//cdn.datatables.net/plug-ins/1.10.9/i18n/Korean.json"
+                  },
+
+                  //"scrollX": true,
+                  "ajax": "../csv/world.json",
+                  "columns": [
+                      { "data": "World_ko" },
+                      { "data": "World_ko" },
+                      { "data": "Positive" },
+                      { "data": "Death" },
+                      { "data": "Cure" },
+                      { "data": "Positive" }
+                  ],
+                  "columnDefs": [
+
+                        {
+
+                            "render": function ( data, type, row ) {
+                              if ( type === "sort" || type === 'type' ) {
+                                return data;
+                              }
+                              else {
+                                //return (row['Positive_p'] > 0 ? data +'<br />(<span class=red>+'+ row['Positive_p']+'</span>)' : data);
+                                return (row['Positive_p'] > 0 ? numberFormat(data) +'<br />(<span class=red>+'+ numberFormat(row['Positive_p'])+'</span>)' : numberFormat(data));
+                                //return data +'<br />(<span class=red>+'+ row['Positive_p']+'</span>)';
+                              }
+
+                            },
+                            "targets": 2
+                        },
+                        {
+                            "render": function ( data, type, row ) {
+                              if ( type === "sort" || type === 'type' ) {
+                                return data;
+                              }
+                              else {
+                                return (row['Death_p'] > 0 ? numberFormat(data) +'<br />(<span class=red>+'+ numberFormat(row['Death_p'])+'</span>)' : numberFormat(data));
+                                //return data +'<br />(<span class=red>+'+ row['Death_p']+'</span>)';
+                              }
+
+                            },
+                            "targets": 3
+                        },
+                        {
+                            "render": function ( data, type, row ) {
+                              if ( type === "sort" || type === 'type' ) {
+                                return data;
+                              }
+                              else {
+                                return (row['Cure_p'] > 0 ? numberFormat(data) +'<br />(<span class=green>+'+ numberFormat(row['Cure_p'])+'</span>)' : numberFormat(data));
+                                //return data +'<br />(<span class=green>+'+ row['Cure_p']+'</span>)';
+                              }
+
+                            },
+                            "targets": 4
+                        },
+                        {
+                            "render": function ( data, type, row ) {
+
+                                return (row['Positive'] > 0 ? (row['Death']/data*100).toFixed(1)+'%' : numberFormat(data));
+                                //return data +'<br />(<span class=green>+'+ row['Cure_p']+'</span>)';
+
+
+                            },
+                            "targets": 5
+                        },
+                        {
+                            targets: 1,
+                            className: 'mdl-data-table__cell--non-numeric'
+                        },
+                        {
+                            targets: [0,2,3,4,5],
+                            className: 'text-center'
+                        },
+                        {
+                            "searchable":  true,
+                            "orderable": false,
+                            "targets": 0
+                        },
+
+                    ],
+                    "order": [[ 2, 'desc' ]],
+                    "initComplete": function() {
+                      var info = w.page.info();
+                      $('#more').html('더 보기 ('+info.length+'/'+info.recordsTotal+')');
+                      $("#world_list_filter input").attr('id','world_search');
+                      //$('#world_search').val('indonesia');
+
+                      $("#world_search").unbind().keyup(function(e) {
+                        var value = $(this).val();
+                          if (value.length>0) {
+                              $('#more').css("display","none");
+                              w.search(value).draw();
+                          } else {
+                              //optional, reset the search if the phrase
+                              //is less then 3 characters long
+                              w.search('').draw();
+                              $('#more').css("display","inline");
+                          }
+
+                      });
+
+                    }
+              }
+             );
+
+             w.on( 'order.dt search.dt', function () {
+                  w.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+                      cell.innerHTML = i+1;
+                  } );
+              } ).draw();
+
+
+
+
+            var t = $('#province').DataTable( {
+                "fixedHeader": {
+                  "header": true,
+                  "headerOffset": $('#navbar1').outerHeight()
+                },
+                "responsive": true,
+                "processing": false,
+                "paging":   false,
+                "ordering": true,
+                "info":     false,
+                "language": {
+                  //"info": "(_END_/_TOTAL_)",
+                  "url": "//cdn.datatables.net/plug-ins/1.10.9/i18n/Korean.json"
+                },
+                //"scrollX": true,
+                "ajax": "../csv/province.json",
+                "columns": [
+                    { "data": "Province_ko" },
+                    { "data": "Province_ko" },
+                    { "data": "Positive" },
+                    { "data": "Death" },
+                    { "data": "Cure" },
+                    { "data": "Positive" }
+                ],
+                "columnDefs": [
+                      {
+
+                          "render": function ( data, type, row ) {
+                            if ( type === "sort" || type === 'type' ) {
+                              return data;
+                            }
+                            else {
+                              //return (row['Positive_p'] > 0 ? data +'<br />(<span class=red>+'+ row['Positive_p']+'</span>)' : data);
+                              return ('<a href=http://'+row['link']+' target=_blank>'+ data +'</a>');
+                              //return data +'<br />(<span class=red>+'+ row['Positive_p']+'</span>)';
+                            }
+
+                          },
+                          "targets": 1
+                      },
+                      {
+
+                          "render": function ( data, type, row ) {
+                            if ( type === "sort" || type === 'type' ) {
+                              return data;
+                            }
+                            else {
+                              //return (row['Positive_p'] > 0 ? data +'<br />(<span class=red>+'+ row['Positive_p']+'</span>)' : data);
+                              return (row['Positive_p'] > 0 ? numberFormat(data) +'<br />(<span class=red>+'+ numberFormat(row['Positive_p'])+'</span>)' : data);
+                              //return data +'<br />(<span class=red>+'+ row['Positive_p']+'</span>)';
+                            }
+
+                          },
+                          "targets": 2
+                      },
+                      {
+                          "render": function ( data, type, row ) {
+                            if ( type === "sort" || type === 'type' ) {
+                              return data;
+                            }
+                            else {
+                              return (row['Death_p'] > 0 ? numberFormat(data) +'<br />(<span class=red>+'+ numberFormat(row['Death_p'])+'</span>)' : data);
+                              //return data +'<br />(<span class=red>+'+ row['Death_p']+'</span>)';
+                            }
+
+                          },
+                          "targets": 3
+                      },
+                      {
+                          "render": function ( data, type, row ) {
+                            if ( type === "sort" || type === 'type' ) {
+                              return data;
+                            }
+                            else {
+                              return (row['Cure_p'] > 0 ? numberFormat(data) +'<br />(<span class=green>+'+ numberFormat(row['Cure_p'])+'</span>)' : data);
+                              //return data +'<br />(<span class=green>+'+ row['Cure_p']+'</span>)';
+                            }
+
+                          },
+                          "targets": 4
+                      },
+                      {
+                          "render": function ( data, type, row ) {
+
+                              //return (row['Cure_p'] > 0 ? data +'<br />(<span class=green>+'+ row['Cure_p']+'</span>)' : data);
+                              //return data +'<br />(<span class=green>+'+ row['Cure_p']+'</span>)';
+                            return (row['Positive'] > 0 ? (row['Death']/data*100).toFixed(1)+'%' : numberFormat(data));
+
+                          },
+                          "targets": 5
+                      },
+                      {
+                          targets: 1,
+                          className: 'mdl-data-table__cell--non-numeric'
+                      },
+                      {
+                          targets: [0,2,3,4,5],
+                          className: 'text-center'
+                      },
+                      {
+                          "searchable": false,
+                          "orderable": false,
+                          "targets": 0
+                      }
+
+                  ],
+                  "order": [[ 2, 'desc' ]]
+            }
+           );
+           t.on( 'order.dt search.dt', function () {
+                t.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+                    cell.innerHTML = i+1;
+                } );
+            } ).draw();
+            var chart = echarts.init(document.getElementById('Chart'));
+            $.ajax({
+                  cache: false,
+                  url: "../csv/positive_day.json",
+                  dataType: "json",
+                  success: function(data){
+
+                    genFormatter = (series) => {
+                        return (param) => {
+                            console.log(param);
+                            let sum = 0;
+                            series.forEach(item => {
+                                sum += item.data[param.dataIndex];
+                            });
+                            return numberFormat(sum)
+                        }
+                    };
+                    option = {
+                      tooltip : {
+                          trigger: 'axis',
+                          axisPointer: {
+                              type: 'shadow',
+                              label: {
+                                  show: true
+                              }
+                          }
+                      },
+                      /*toolbox: {
+                          show : true,
+                          feature : {
+                              mark : {show: true},
+                              dataView : {show: false, readOnly: false},
+                              magicType: {show: true, type: ['line', 'bar']},
+                              restore : {show: true},
+                              saveAsImage : {show: true}
+                          }
+                      },*/
+                      grid: { left:50, right:50 },
+                      calculable : true,
+                            legend: {
+                                data:['확진자','격리중','사망자','격리해제'],
+                                itemGap: 10,
+                                type: 'scroll',
+                                top: '0'
+
+                            },
+
+
+                      xAxis: [
+                          {
+
+                              type: 'category',
+                              boundaryGap:true,
+                              axisLabel: {
+                                  formatter: (function(value){
+                                      return moment(value).locale('ko').format('MMMM Do');
+                                  })
+                              },
+                              data : data.date
+                          }
+                      ],
+                      yAxis: [
+                              {
+                                  type : 'value',
+                                  name : '명',
+                                  axisLabel: {
+                                    formatter: (function(value){
+                                        return numberToKorean(value);
+                                    })
+                                  }
+                              },
+                            ],
+                      dataZoom: [
+                          {
+                              show: true,
+                              start: 60,
+                              end: 100
+                          },
+                      ],
+                      series : [
+
+                          {
+                              name: '사망자',
+                              type: 'bar',
+                              stack: 'total',
+                              data: data.death
+                          },
+                          {
+                              name: '격리해제',
+                              type: 'bar',
+                              stack: 'total',
+                              data: data.cure
+                          },
+                          {
+                              name: '격리중',
+                              type: 'bar',
+                              stack: 'total',
+                              data: data.process
+
+                          },
+                          {
+                              name: '확진자',
+                              type: 'line',
+
+                              data: data.positive
+                          }
+
+                      ]
+                    };
+
+                    chart.setOption(option);
+                    var chart2 = echarts.init(document.getElementById('Chart2'));
+                    option2 = {
+                      tooltip : {
+                          trigger: 'axis',
+                          axisPointer: {
+                              type: 'shadow',
+                              label: {
+                                  show: true
+                              }
+                          }
+                      },
+                      /*toolbox: {
+                          show : true,
+                          feature : {
+                              mark : {show: true},
+                              dataView : {show: false, readOnly: false},
+                              magicType: {show: true, type: ['line', 'bar']},
+                              restore : {show: true},
+                              saveAsImage : {show: true}
+                          }
+                      },*/
+                      grid: { left:50, right:50 },
+                      calculable : true,
+                            legend: {
+                                data:['확진자','사망자','격리해제','누적 확진자'],
+                                itemGap: 10,
+                                type: 'scroll',
+                                top: '0'
+
+                            },
+                      xAxis: [
+                          {
+
+                              type: 'category',
+                              boundaryGap:true,
+                              axisLabel: {
+                                  formatter: (function(value){
+                                      return moment(value).locale('ko').format('MMMM Do');
+                                  })
+                              },
+                              data : data.date
+                          }
+                      ],
+                      yAxis: [
+                                {
+                                    type : 'value',
+                                    name : '명',
+                                    axisLabel: {
+                                      formatter: (function(value){
+                                          return numberToKorean(value);
+                                      })
+                                    }
+                                },
+                                {
+                                  type: 'value',
+                                  name: '누적 확진자 (명)',
+                                  axisLabel: {
+                                    formatter: (function(value){
+                                        return numberToKorean(value);
+                                    })
+                                  }
+                               }
+                            ],
+                      dataZoom: [
+                          {
+                              show: true,
+                              start: 60,
+                              end: 100
+                          },
+                      ],
+                      series : [
+                          {
+
+                              name: '확진자',
+                              type: 'bar',
+                              data: data.positive_p
+                          },
+                          {
+                              name: '사망자',
+                              type: 'bar',
+                              data: data.death_p
+                          },
+                          {
+                              name: '격리해제',
+                              type: 'bar',
+                              data: data.cure_p
+                          },
+                          {
+                              yAxisIndex: 1,
+                              name: '누적 확진자',
+                              type: 'line',
+                              data: data.positive
+                          }
+
+                      ]
+                    };
+
+                    chart2.setOption(option2);
+
+                    var chart3 = echarts.init(document.getElementById('Chart3'));
+                    sum = [{
+                                  name: '누적 확진자',
+                                  data: data.positive
+                              }, {
+                                  name: '누적 결과음성',
+                                  data: data.negative
+                          }]
+                    option3 = {
+                      tooltip : {
+                          trigger: 'axis',
+                          axisPointer: {
+                              type: 'shadow',
+                              label: {
+                                  show: true
+                              }
+                          }
+                      },
+                      /*toolbox: {
+                          show : true,
+                          feature : {
+                              mark : {show: true},
+                              dataView : {show: false, readOnly: false},
+                              magicType: {show: true, type: ['line', 'bar']},
+                              restore : {show: true},
+                              saveAsImage : {show: true}
+                          }
+                      },*/
+                      grid: { left:50, right:50 },
+                      calculable : true,
+                            legend: {
+                                data:['누적 확진자','누적 결과음성','확진률'],
+                                itemGap: 10,
+                                type: 'scroll',
+                                top: '0'
+
+                            },
+                      xAxis: [
+                          {
+
+                              type: 'category',
+                              boundaryGap:true,
+                              axisLabel: {
+                                  formatter: (function(value){
+                                      return moment(value).locale('ko').format('MMMM Do');
+                                  })
+                              },
+                              data : data.date
+                          }
+                      ],
+                      yAxis: [
+                                {
+                                    type : 'value',
+                                    name : '누적 검사완료 (명)',
+                                    axisLabel: {
+                                      formatter: (function(value){
+                                          return numberToKorean(value);
+                                      })
+                                    }
+                                },
+                                {
+                                  type: 'value',
+                                  name: '확진률',
+                                  axisLabel: {
+                                      formatter: '{value} %'
+                                  }
+                               }
+                            ],
+                      dataZoom: [
+                          {
+                              show: true,
+                              start: 60,
+                              end: 100
+                          },
+                      ],
+                      series : [
+                          {
+
+                              name: '누적 확진자',
+                              stack: 'total',
+                              type: 'bar',
+                              data: data.positive
+                          },
+                          {
+                              name: '누적 결과음성',
+                              stack: 'total',
+                              type: 'bar',
+                              label: {
+                                  show: false,
+                                  formatter: genFormatter(sum),
+                                  color: 'black',
+                                  position: 'top'
+                              },
+                              data: data.negative
+                          },
+                          {
+                              yAxisIndex: 1,
+                              name: '확진률',
+                              type: 'line',
+                              data: data.positive_per
+                          }
+
+                      ]
+                    };
+
+                    chart3.setOption(option3);
+
+
+                    var chart4 = echarts.init(document.getElementById('Chart4'));
+
+                    sum = [{
+                                  name: '일일 확진자',
+                                  data: data.positive_p
+                              }, {
+                                  name: '일일 결과음성',
+                                  data: data.negative_p
+                          }]
+                    option4 = {
+                      tooltip : {
+                          trigger: 'axis',
+                          axisPointer: {
+                              type: 'shadow',
+                              label: {
+                                  show: true
+                              }
+                          }
+                      },
+                      /*toolbox: {
+                          show : true,
+                          feature : {
+                              mark : {show: true},
+                              dataView : {show: false, readOnly: false},
+                              magicType: {show: true, type: ['line', 'bar']},
+                              restore : {show: true},
+                              saveAsImage : {show: true}
+                          }
+                      },*/
+                      grid: { left:50, right:50 },
+                      calculable : true,
+                            legend: {
+                                data:['일일 확진자','일일 결과음성','확진률'],
+                                itemGap: 10,
+                                type: 'scroll',
+                                top: '0'
+
+                            },
+                      xAxis: [
+                          {
+
+                              type: 'category',
+                              boundaryGap:true,
+                              axisLabel: {
+                                  formatter: (function(value){
+                                      return moment(value).locale('ko').format('MMMM Do');
+                                  })
+                              },
+                              data : data.date
+                          }
+                      ],
+                      yAxis: [
+                                {
+                                    type : 'value',
+                                    name : '일일 검사완료 (명)',
+                                    axisLabel: {
+                                      formatter: (function(value){
+                                          return numberToKorean(value);
+                                      })
+                                    }
+                                },
+                                {
+                                  type: 'value',
+                                  name: '확진률',
+                                  axisLabel: {
+                                      formatter: '{value} %'
+                                  }
+                               }
+                            ],
+                      dataZoom: [
+                          {
+                              show: true,
+                              start: 60,
+                              end: 100
+                          },
+                      ],
+                      series : [
+                          {
+
+                              name: '일일 확진자',
+                              type: 'bar',
+                              stack: 'total',
+                              data: data.positive_p
+                          },
+                          {
+                              name: '일일 결과음성',
+                              type: 'bar',
+                              stack: 'total',
+                              label: {
+                                  show: false,
+                                  formatter: genFormatter(sum),
+                                  color: 'black',
+                                  position: 'top'
+                              },
+                              data: data.negative_p
+                          },
+                          {
+                              yAxisIndex: 1,
+                              name: '확진률',
+                              type: 'line',
+                              data: data.positive_per_p
+                          }
+
+                      ]
+                    };
+
+                    chart4.setOption(option4);
+
+                    }
+
+            });
+
+
+
+       });
+
+
+
+    </script>
+
+
+
+ </head>
+  <body data-spy="scroll" data-target="#navbar1" data-offset="0">
+  <nav id="navbar1" class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top">
+  <span class="logo"><a class="navbar-brand" href="/ko"><img src="../favicon/favicon-32x32.png" alt="logo"></a></span>
+  <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault"> -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Top</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#news">최신뉴스</a>
+      </li>
+      <!--<li class="nav-item">
+        <a class="nav-link" href="#data">Data</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#timeline">Garis waktu</a>
+      </li>-->
+      <!--<li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>-->
+    </ul>
+    <!--<button class="btn btn-secondary my-2 my-sm-0" onclick="location.href='/index_ko.html';">한국어</button>-->
+    <!--<form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submitd">Search</button>
+    </form>-->
+  </div>
+</nav>
+
+<main id="home" role="main" class="container">
+
+
+    <h1 class="text-center">코로나 19 실시간 발생 현황</h1>
+    <p  id="update" class="text-center update">  </p>
+    <div class="text-center lang">
+      <select class="lang-control" onchange="location = this.value;"id="sel1">
+        <option value="/" >🇮🇩Indonesia</option>
+        <!--<option>English</option>-->
+        <option value="/ko" selected>🇰🇷한국어</option>
+        <option value="/en">🌐English</option>
+      </select>
+    </div>
+    <h2 class="text-center mt-4 mb-4 "><img src="../img/global.jpg" />전 세계</h2>
+
+    <div class="row  text-center" id="w_num_box">
+     <div class="col" id="w_num_box">
+       <h3 class="mb-4">확진자</h4>
+       <h3 id="w_positif" class="current ">-</h3>
+       <span id="w_positif_p"class="red change">-</span>
+     </div>
+     <div class="col " id="">
+       <h3 class="mb-4">사망자</h3>
+       <h3 id="w_kematian" class="red current">-</h3>
+        <span id="w_kematian_p"class="red change">-</span>
+     </div>
+     <div class="col " id="">
+       <h3 class="mb-4">격리해제</h3>
+       <h3 id="w_sembuh" class="current green">-</h3>
+       <span id="w_sembuh_p" class="green change">-</span>
+
+     </div>
+     <div class="col " id="">
+       <h3 class="mb-4">치사율</h3>
+       <h3 id="wp_kematian" class="current">-</h3>
+
+     </div>
+     <!--<p class="col-xl mt-3 text-right">From: <a href="http://worldometers.info/" target="_blank">worldometers.info</a></p>-->
+    </div>
+   <h2 class="text-center mt-4 mb-4 "><img src="../img/id.jpg" />인도네시아</h2>
+   <div id="num_box" >
+     <div class="cor-4 text-center" id="num_positive">
+       <h3 class="title">확진자</h3>
+       <span id="positif" class="current">-</span></br>
+       <span id="positif_p" class="red change">-</span>
+     </div>
+     <div class="cor-4 text-center" id="num_death">
+       <h3 class="title">사망자</h3>
+       <span id="kematian" class="red current">-</span></br>
+       <span id="kematian_p" class="red change">-</span>
+     </div>
+     <div class="cor-4 text-center" id="num_complte">
+       <h3 class="title">격리해제</h3>
+       <span id="sembuh" class="current green">-</span></br>
+       <span id="sembuh_p" class="green change">-</span>
+
+     </div>
+     <div class="cor-4 text-center" id="num_death">
+       <h3 class="title">치사율</h3>
+       <span id="p_kematian" class="current">-</span>
+     </div>
+     <!--<p class="col-xl mt-3 text-right">From: <a href="https://covid19.go.id" target="_blank">covid19.go.id</a><br/>
+       <a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">wikipedia.org</a>
+     </p>-->
+     <!--
+     <div class="cor-3 text-center" id="num_check">
+       <h3 class="title" >Telah Diperiksa</h3>
+       <span id="t_diperiksa" class="current">-</span>
+     </div>
+     <div class="cor-3 text-center" id="num_checking">
+       <h3  class="title">Sedang Diperiksa</h3>
+       <span id="s_diperiksa" class="current">-</span>
+     </div>
+     <div class="cor-3 text-center" id="num_negative">
+       <h3 class="title">Negatif</h3>
+       <span id="negatif" class="current">-</span>
+     </div>-->
+
+
+  </div>
+  <h2 class="chart_title text-center"> 전 세계 발생 현황  </h2>
+  <div class="pb-5">
+    <table id="world_list"  style="width: 100%" class="table table-striped table-bordered display nowrap" >
+      <thead >
+          <tr>
+              <th></th>
+              <th>국가</th>
+              <th>확진자</th>
+              <th>사망자</th>
+              <th>격리해제</th>
+              <th>치사율 %</th>
+          </tr>
+      </thead>
+    </table>
+    <div class="text-center mt-4">
+      <button id="more" type="button" class="btn btn-dark">더 보기</button>
+    </div>
+  </div>
+  <!--<div class="text-center banner mb-5">
+     <a href="https://www.tokopedia.com/seecorona/masker-kain-anti-virus-corona" target="_blank"><img src="../img/masker.jpg" /></a>
+  </div>-->
+  <h2 class="chart_title text-center"> 인도네시아 코로나 19 지역 현황 </h2>
+  <div id="map_indonesia_cover">
+    <div id="map_indonesia">
+
+    </div>
+  </div>
+  <div class="pb-5">
+    <table id="province"  style="width: 100%" class="table table-striped table-bordered display nowrap" >
+      <thead>
+          <tr>
+              <th></th>
+              <th>지역</th>
+              <th>확진자</th>
+              <th>사망</th>
+              <th>격리해제</th>
+              <th>치사율</th>
+          </tr>
+      </thead>
+    </table>
+  </div>
+  <h2 class="mt-5 chart_title text-center"> 인도네시아 코로나 19 일일 현황 </h2>
+  <div class="Chart" id="Chart"></div>
+
+  <h2 class="mt-5 chart_title text-center"> 인도네시아 코로나 19 일일 증가 현황</h2>
+  <div class="Chart" id="Chart2"></div>
+
+  <h2 class="mt-5 chart_title text-center"> 인도네시아 코로나 19 검사완료 현황</h2>
+  <div class="Chart" id="Chart3"></div>
+  <h2 class="mt-5 chart_title text-center"> 인도네시아 코로나 19 일일 검사완료 현황</h2>
+  <div class="Chart" id="Chart4"></div>
+  <div class="my-3 p-3 ">
+    <p class="from">
+        * 자료 출처</br>
+        <a href="http://worldometers.info/" target="_blank">worldometers.info</a> <br />
+        <a href="https://covid19.go.id" target="_blank">covid19.go.id</a><br/>
+        <a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">wikipedia.org</a> <br /><br />
+   </p>
+  </div>
+</main><!-- /.container -->
+<main role="news" id="news" class="container">
+  <div class="my-3  ">
+    <h3 class="pb-4 mb-4 font-italic border-bottom">
+      코로나 관련 최신 현지뉴스
+    </h3>
+    <div class=" text-muted pt-1" id="google_news"></div>
+    <div class="text-center"><input type="button" id="btn_news_more" class="mt-3 mb-3 btn btn-dark" value="더 보기"/></div>
+    <h3 class="pt-5 mt-5 mb-4 font-italic border-bottom">
+      코로나 관련 한국뉴스
+    </h3>
+    <div class=" text-muted pt-1" id="google_news_ko"></div>
+    <div class="text-center"><input type="button" id="btn_news_ko_more" class="mt-3 mb-3 btn btn-dark" value="더 보기"/></div>
+    <!--
+    <div class="text-muted pt-3" >
+      <div class="text-left" id="rssOutput"></div>
+    </div>-->
+    <!--<h4 class="pb-1 mb-1 mt-3 pt-3 border-bottom">
+      <a href="https://www.detik.com" target="_blank">Detiknews</a>
+    </h4>
+    <div class=" text-muted pt-1" id="detiknews"></div>-->
+    <!--<h4 class="pb-1 mb-1 mt-3 pt-3 border-bottom">
+      <a href="https://www.liputan6.com" target="_blank">liputan6</a>
+    </h4>
+    <div class=" text-muted pt-1" id="liputan6"></div>
+  </div>-->
+
+ </main>
+ <main role="info_k" id="info_k" class="container">
+   <div class="my-3  ">
+     <h3 class="pb-4 mb-4 font-italic border-bottom">
+       대사관 공지사항
+     </h3>
+     <div>
+                 <a class="twitter-timeline" href="https://twitter.com/korembindonesia?ref_src=twsrc%5Etfw">Tweets by korembindonesia</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+     </div>
+
+  </main>
+
+
+ <!--<main id="timeline" role="main" class="container">
+   <div class="row">
+     <div class="col-md-10 blog-main">
+       <h3 class="pb-4 mb-4 font-italic border-bottom">
+         Garis waktu
+       </h3>
+
+       <div class="blog-post" id="22_apr">
+         <h2 class="blog-post-title">22 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Setidaknya 55.000 spesimen dari 47.000 orang telah diuji di 38 laboratorium sejauh ini. Ada 193.751 orang yang diawasi (ODP) dan 17.754 pasien di bawah pengawasan (PDP) dari 263 kota dan kabupaten.</li>
+           <li class="mb-3">Indonesia mengkonfirmasi 283 kasus tambahan, sehingga jumlah total menjadi 7.418.</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="21_apr">
+         <h2 class="blog-post-title">21 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Joko Widodo mengumumkan keputusannya untuk melarang mudik Idul Fitri (eksodus) mulai 24 April untuk menghentikan penyebaran COVID-19 menjelang Ramadhan.</li>
+           <li class="mb-3">53.701 spesimen dari 46.173 orang telah diuji di 37 laboratorium sejauh ini. Ada 186.330 orang yang diawasi (ODP) dan 16.763 pasien di bawah pengawasan (PDP) dari 257 kota dan kabupaten.</li>
+           <li class="mb-3">Indonesia mengkonfirmasi 375 kasus tambahan, total 7.135.</li>
+         </ul>
+       </div>
+       <div class="blog-post" id="20_apr">
+         <h2 class="blog-post-title">20 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">49.767 spesimen dari 43.749 orang telah diuji di 36 laboratorium sejauh ini. Ada 181.770 orang yang diawasi (ODP) dan 16.343 pasien di bawah pengawasan (PDP).</li>
+           <li class="mb-3">Indonesia mengkonfirmasi 185 kasus tambahan, sehingga jumlah total menjadi 6.760.</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="19_apr">
+         <h2 class="blog-post-title">19 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Setidaknya 47.000 spesimen dari 42.000 orang telah diuji di 35 laboratorium sejauh ini. Setidaknya ada 178.883 orang yang diawasi (ODP) dan 15.646 pasien di bawah pengawasan (PDP) dari 250 kota dan kabupaten.</li>
+           <li class="mb-3">Indonesia mengkonfirmasi 327 kasus tambahan, sehingga jumlah total menjadi 6.575.</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="18_apr">
+         <h2 class="blog-post-title">18 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Setidaknya 45.000 spesimen dari 39.000 orang telah diuji di 34 laboratorium sejauh ini. Ada 176.344 orang yang diawasi (ODP) dan 12.979 pasien di bawah pengawasan (PDP).</li>
+           <li class="mb-3">Indonesia mengkonfirmasi 325 kasus tambahan, total 6.248.</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="17_apr">
+         <h2 class="blog-post-title">17 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Setidaknya 42.000 spesimen dari 37.000 orang telah diuji di 34 laboratorium sejauh ini. Setidaknya ada 173.000 orang di bawah pengawasan (ODP) dan 12.000 pasien di bawah pengawasan (PDP).</li>
+           <li class="mb-3">Indonesia mengumumkan 407 kasus tambahan, terbanyak dalam satu hari sejak pandemi dimulai di Indonesia, sehingga jumlah totalnya menjadi 5.923.</li>
+           <li class="mb-3">Pembatasan sosial berskala besar untuk wilayah metropolitan Bandung (kota Bandung, kota Cimahi, Kabupaten Bandung, Kabupaten Bandung Barat, Kabupaten Sumedang), Jawa Barat, telah disetujui dan akan berlaku mulai Rabu, 22 April.</li>
+           <li class="mb-3">Aplikasi untuk pembatasan sosial berskala besar untuk Makassar, Sulawesi Selatan, seluruh Sumatera Barat, dan Tegal, Jawa Tengah disetujui.</li>
+         </ul>
+       </div>
+       <div class="blog-post" id="16_apr">
+         <h2 class="blog-post-title">16 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengumumkan 380 kasus baru, 5.516 total dari 202 kota dan kabupaten. Untuk pertama kalinya, jumlah pemulihan melebihi jumlah total kematian.</li>
+           <li class="mb-3">Selain itu, 169.446 orang di bawah pengawasan dan 11.873 pasien di bawah pengawasan. 39.706 spesimen telah diuji sejauh ini.</li>
+           <li class="mb-3">Langkah-langkah jarak sosial skala besar untuk wilayah metropolitan Bandung (kota Bandung, kota Cimahi, Kabupaten Bandung, Kabupaten Bandung Barat, Kabupaten Sumedang), Jawa Barat, dijadwalkan berlaku mulai Rabu, 22 April.</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="15_apr">
+         <h2 class="blog-post-title">15 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Setidaknya 36.431 spesimen dari 33.001 orang telah diuji sejauh ini. Ada 165.549 orang yang diawasi (ODP) dan 11.165 pasien di bawah pengawasan (PDP) dari 196 kota dan kabupaten.</li>
+           <li class="mb-3">Indonesia mengumumkan 297 kasus tambahan, sehingga jumlah seluruhnya menjadi 5.136.</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="14_apr">
+         <h2 class="blog-post-title">14 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengumumkan 282 kasus tambahan, sehingga jumlah total menjadi 4.839.</li>
+           <li class="mb-3">Untuk pertama kalinya, Indonesia menerbitkan jumlah tersangka COVID-19. Per 14 April, ada 139.137 orang di bawah pengawasan (ODP) dan 10.482 pasien di bawah pengawasan (PDP).</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="13_apr">
+         <h2 class="blog-post-title">13 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengkonfirmasi 316 kasus baru, 4.557 total.</li>
+           <li class="mb-3">Permohonan pembatasan sosial berskala besar di Kotamadya & Kabupaten Tangerang dan munipikalitas Tangerang Selatan di provinsi Banten telah disetujui dan akan berlaku efektif mulai Sabtu, 18 April. Ini berarti pembatasan sosial akan mencakup seluruh wilayah metropolitan Jakarta.</li>
+           <li class="mb-3">Aplikasi untuk pembatasan sosial skala besar di Pekanbaru, Riau telah disetujui dan akan berlaku mulai Jumat, 17 April. Jam malam berlaku mulai pukul 20:00 hingga 05:00.</li>
+           <li class="mb-3">President Joko Widodo declared COVID-19 as a national disaster.</li>
+
+
+         </ul>
+       </div>
+       <div class="blog-post" id="12_apr">
+         <h2 class="blog-post-title">12 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia telah menguji 27.000 spesimen.</li>
+           <li class="mb-3">Pembatasan sosial berskala besar akan berlaku di kota Depok, kota dan kabupaten Bogor, dan kota dan kabupaten Bekasi, semuanya di provinsi Jawa Barat, mulai 15 April setidaknya selama dua minggu.</li>
+           <li class="mb-3">Indonesia mengumumkan 399 kasus tambahan, terbanyak dalam satu hari sejak pandemi dimulai di Indonesia. Jumlah total sekarang adalah 4.241.</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="11_apr">
+         <h2 class="blog-post-title">11 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengumumkan 330 kasus tambahan, sehingga jumlah total menjadi 3.842.</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="10_apr">
+         <h2 class="blog-post-title">10 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengkonfirmasi 219 kasus baru, total 3.512.</li>
+           <li class="mb-3">Perusahaan naik wahana online, GoJek dan Grab, tidak lagi menyediakan layanan ojek di Jakarta karena Jakarta mulai memberlakukan kebijakan pembatasan sosial berskala besar.</li>
+           <li class="mb-3">Indonesia telah menguji 19.500 spesimen berdasarkan metode Reaksi Rantai Polymerase.</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="09_apr">
+         <h2 class="blog-post-title">09 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3"></li>
+           <li class="mb-3">Gorontalo mengumumkan kasus pertamanya. Pada 9 April malam, kasus telah dikonfirmasi di semua provinsi di Indonesia.</li>
+           <li class="mb-3">Kementerian Pekerjaan Umum dan Perumahan Rakyat menyiapkan tiga menara tambahan (menara 2, 4, dan 5) di rumah sakit darurat Wisma Atlet untuk menambah ruang pasien COVID-19 dan menyediakan tempat yang layak bagi dokter dan paramedis yang bekerja 24 jam.</li>
+           <li class="mb-3">Perusahaan perjalanan online Gojek dan perusahaan layanan kesehatan digital Halodoc ditetapkan untuk mengadakan tes cepat gratis untuk mendeteksi coronavirus (COVID-19) untuk publik sebagai pemutaran awal.</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="08_apr">
+         <h2 class="blog-post-title">08 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengkonfirmasi 218 kasus baru, sehingga jumlah totalnya menjadi 2.956</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="07_apr">
+         <h2 class="blog-post-title">07 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengkonfirmasi 247 kasus baru, total 2.738.</li>
+           <li class="mb-3">Pemerintah Jakarta telah mengungkapkan telah mengubur 639 orang sesuai dengan protokol penguburan orang yang diduga atau dikonfirmasi telah terinfeksi COVID-19.</li>
+           <li class="mb-3">Kementerian Kesehatan mengabulkan permintaan Jakarta untuk memberlakukan pembatasan sosial berskala besar mulai dari 10 April hingga 24 April dan dapat diperpanjang selama 14 hari setelah kasus COVID-19 terakhir. Kementerian menulis dalam sebuah keputusan menteri bahwa data telah menunjukkan peningkatan yang signifikan dalam, dan penyebaran cepat, kasus COVID-19, disertai dengan bukti transmisi lokal di Jakarta.</li>
+           <li class="mb-3">Hanya 36 dari setiap juta orang yang diuji untuk virus corona di Indonesia, menjadikannya yang terburuk keempat dalam tingkat pengujian di antara negara-negara dengan populasi 50 juta atau lebih.</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="06_apr">
+         <h2 class="blog-post-title">06 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia telah menguji 11.242 spesimen, di mana 8.000 spesimen negatif.</li>
+           <li class="mb-3">Indonesia mengumumkan 218 kasus tambahan, 2.491 total.</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="05_apr">
+         <h2 class="blog-post-title">05 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengkonfirmasi 181 kasus baru, sehingga jumlah totalnya menjadi 2.273.</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="04_apr">
+         <h2 class="blog-post-title">04 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengumumkan 106 kasus baru, total 2.092.</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="03_apr">
+         <h2 class="blog-post-title">03 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengkonfirmasi 196 kasus baru, sehingga jumlah total menjadi 1.986.</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="02_apr">
+         <h2 class="blog-post-title">02 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengkonfirmasi 113 kasus baru, total 1.790.</li>
+           <li class="mb-3">Indonesia kini telah melarang orang asing memasuki perbatasannya. Warga negaranya yang kembali dari luar negeri harus memberikan laporan kesehatan dan melakukan karantina mandiri wajib.</li>
+           <li class="mb-3">Kementerian Kehakiman dan Hak Asasi Manusia Indonesia akan membebaskan lebih dari 30.000 tahanan untuk menghindari infeksi massal virus corona di penjara-penjara Indonesia yang penuh sesak. Itu menerima banyak kritik terutama bagi mereka yang melakukan korupsi. Namun, dinyatakan bahwa mereka tidak akan membebaskan tahanan yang dihukum karena korupsi, pembalakan liar, terorisme, kejahatan narkoba, kejahatan berat hak asasi manusia atau kejahatan transnasional terorganisir.</li>
+
+         </ul>
+       </div>
+       <div class="blog-post" id="01_apr">
+         <h2 class="blog-post-title">01 April</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengkonfirmasi 149 kasus baru, sehingga jumlah total menjadi 1.677.</li>
+           <li class="mb-3">300 siswa polisi di Sekolah Pembentukan Perwira (Setukpa) Lembaga Pendidikan Polri (Lemdikpol) di Sukabumi dikarantina selama 14 hari setelah hasil tes cepat positif.</li>
+         </ul>
+       </div>
+       <div class="blog-post" id="31_mar">
+         <h2 class="blog-post-title">31 Maret</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengkonfirmasi 114 kasus baru, total 1.528. </li>
+           <li class="mb-3">30.000 tahanan direncanakan akan dibebaskan lebih awal untuk mencegah penyebaran COVID-19 di dalam penjara.</li>
+           <li class="mb-3">Presiden Joko Widodo menyatakan darurat kesehatan masyarakat dan meminta polisi untuk menegakkan jarak sosial berskala besar, di samping mengalokasikan Rp405 triliun untuk pemberantasan COVID-19 dan meredam dampak sosial dan ekonomi akibat pandemi, dan mengumumkan stimulus untuk yang rendah. masyarakat kelas menengah.</li>
+
+         </ul>
+
+
+       </div>
+       <div class="blog-post" id="30_mar">
+         <h2 class="blog-post-title">30 Maret</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengkonfirmasi 129 kasus baru, sehingga jumlah total menjadi 1.414.</li>
+           <li class="mb-3">Jokowi memerintahkan pembatasan sosial berskala besar ditambah dengan kebijakan 'darurat sipil'.</li>
+
+         </ul>
+
+
+       </div>
+       <div class="blog-post" id="29_mar">
+         <h2 class="blog-post-title">29 Maret</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengkonfirmasi 130 kasus baru lainnya, total 1.285.</li>
+
+         </ul>
+
+
+       </div>
+       <div class="blog-post" id="28_mar">
+         <h2 class="blog-post-title">28 Maret</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengumumkan 109 kasus lagi, sehingga jumlah seluruhnya menjadi 1.155.</li>
+           <li class="mb-3">Sejumlah kota memutuskan untuk mengeluarkan kunci lokal, seperti kota Tegal di Jawa Tengah dan provinsi Papua.</li>
+         </ul>
+
+
+       </div>
+       <div class="blog-post" id="27_mar">
+         <h2 class="blog-post-title">27 Maret</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengkonfirmasi 153 kasus positif baru, total 1.046. Mereka juga mengumumkan 9 kematian dan 11 pemulihan.</li>
+           <li class="mb-3">Pasar Beringharjo dan Tanah Abang (10 hari) ditutup untuk mencegah COVID-19.</li>
+           <li class="mb-3">Menteri Koordinator Politik, Hukum, dan Keamanan Indonesia Mahfud MD mengatakan bahwa undang-undang khusus tentang penguncian lokal saat ini sedang dikerjakan.</li>
+         </ul>
+
+
+       </div>
+       <div class="blog-post" id="26_mar">
+         <h2 class="blog-post-title">26 Maret</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengumumkan 103 kasus baru, sehingga jumlah totalnya menjadi 893. Jumlah kematian meningkat 20, paling banyak dalam satu hari sejak virus tersebut menyerang Indonesia. Para peneliti memperkirakan bahwa mungkin ada puluhan ribu infeksi tersembunyi di seluruh negeri.</li>
+           <li class="mb-3">40 ton peralatan medis dari Tiongkok diangkut ke Jakarta.</li>
+         </ul>
+
+
+       </div>
+       <div class="blog-post" id="25_mar">
+         <h2 class="blog-post-title">25 Maret</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Kementerian Perhubungan Indonesia melarang setiap orang bepergian pulang untuk liburan Idul Fitri untuk menahan penyebaran virus.</li>
+           <li class="mb-3">Indonesia mengkonfirmasi 105 lebih banyak kasus dan mengoreksi data dari hari sebelumnya yang 685 kasus positif daripada 686. Satu nama pasien keliru terdaftar di dua rumah sakit. Jumlah total kasus menjadi 790.</li>
+         </ul>
+
+
+       </div>
+       <div class="blog-post" id="24_mar">
+         <h2 class="blog-post-title">24 Maret</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Presiden Widodo mengumumkan bahwa ujian nasional tahunan akan dibatalkan. Jokowi juga mengumumkan langkah-langkah relaksasi pinjaman kendaraan selama satu tahun.</li>
+         </ul>
+
+
+       </div>
+       <div class="blog-post" id="23_mar">
+         <h2 class="blog-post-title">23 Maret</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengumumkan 65 kasus baru, sehingga totalnya menjadi 579 kasus. Indonesia juga mengumumkan 30 pulih dan 49 kematian.</li>
+           <li class="mb-3">Presiden Joko Widodo meresmikan rumah sakit darurat COVID-19 pertama di negara itu di desa mantan atlet untuk Asian Games 2018 di, Kemayoran, Jakarta. Itu dijadwalkan akan dilengkapi dengan 3000 tempat tidur untuk pasien yang membutuhkan isolasi.</li>
+
+
+         </ul>
+
+
+       </div>
+       <div class="blog-post" id="22_mar">
+         <h2 class="blog-post-title">22 Maret</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Ikatan Dokter Indonesia mengumumkan 6 dokter (dr. Toni Daniel Silitonga; dr. Ucok Martin SpP; dr. Djoko Judodjoko, SpB; dr. Hadio Ali SpS; dr. Laurentius P, SpKJ; dr. Adi Mirsaputra SpTHT) telah mengontrak COVID-19.</li>
+           <li class="mb-3">Indonesia mengumumkan 64 kasus baru, total 514 kasus. Indonesia juga mengumumkan 29 pulih dan 48 kematian. Peningkatan 10 kematian dengan tingkat kematian 9,33%, yang merupakan tingkat kematian terbesar sejauh ini.</li>
+
+
+         </ul>
+
+
+       </div>
+       <div class="blog-post" id="21_mar">
+         <h2 class="blog-post-title">21 Maret</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Angkatan Udara Indonesia akan menerbangkan C-130 Hercules (A-1333) ke kota Cina Shanghai pada hari Sabtu untuk mengambil sekitar 9 ton peralatan medis. Rute Malang-Natuna-Hainan-Shanghai. Peralatan termasuk masker sekali pakai, masker N-95, pakaian pelindung, kacamata, sarung tangan, penutup sepatu, termometer inframerah dan topi bedah.</li>
+           <li class="mb-3">Satu orang meninggal setelah mengalami demam dan sakit kepala. Korban adalah warga negara Rusia dan meninggal di rumah kosnya di Jalan Bukit Tunggal Gang 5, Denpasar Barat.</li>
+           <li class="mb-3">Indonesia mengumumkan 81 kasus baru, total 450 kasus infeksi COVID-19. Indonesia juga mengumumkan 20 pulih dan 38 kematian, meningkat 6 kematian sejak 20 Maret 2020.</li>
+
+
+         </ul>
+
+
+       </div>
+       <div class="blog-post" id="20_mar">
+         <h2 class="blog-post-title">20 Maret</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengumumkan 60 kasus baru, sehingga totalnya menjadi 369 kasus.</li>
+           <li class="mb-3">Menteri Badan Usaha Milik Negara Indonesia Erick Thohir bahwa Indonesia memiliki cukup obat untuk 60.000 COVID-19 pasien, dan pada akhir Maret dapat memasok hingga 4,7 juta masker wajah.</li>
+           <li class="mb-3">Presiden Joko Widodo menginstruksikan para pejabatnya untuk menggeser prioritas anggaran. Anggaran yang kurang diprioritaskan dari anggaran negara (APBN) dan anggaran daerah (APBD) harus dialokasikan kembali untuk mendanai upaya pemerintah dalam memerangi pandemi coronavirus, meningkatkan jaring pengaman untuk masyarakat Indonesia, dan untuk mendorong usaha kecil dan menengah. Dia juga berjanji untuk mulai menggelar pengujian coronavirus cepat, memprioritaskan Jakarta Selatan sebagai daerah yang paling parah.</li>
+           <li class="mb-3">Walikota Bogor, Bima Arya dinyatakan positif COVID-19.</li>
+           <li class="mb-3">Masjid Istiqlal menghentikan shalat Jumat selama 2 minggu setelah Anies Baswedan dan Dewan Ulama Indonesia meminta kegiatan keagamaan massal di Jakarta.</li>
+
+         </ul>
+
+
+       </div>
+       <div class="blog-post" id="19_mar">
+         <h2 class="blog-post-title">19 Maret</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Joko Widodo mengumumkan 7 poin kritis (Mass rapid test, insentif untuk tenaga medis, melibatkan umat beragama, berhenti mengekspor peralatan medis, menghentikan liburan, insentif untuk Usaha Kecil dan Menengah, menambah stok makanan) untuk mempercepat penghapusan wabah COVID-19 di Indonesia.</li>
+           <li class="mb-3">Indonesia mengumumkan 82 kasus baru, sehingga total menjadi 309 kasus.</li>
+           <li class="mb-3">4 lebih banyak pasien di DKI Jakarta diumumkan sembuh dari COVID-19.</li>
+           <li class="mb-3">Impor Alat Uji Cepat (15 menit - 3 jam) oleh Rajawali Nusantara Indonesia dari Cina telah disetujui oleh Departemen Kesehatan.</li>
+           <li class="mb-3">Joko Widodo dan Iriana memiliki hasil tes negatif pada tes COVID-19. </li>
+
+         </ul>
+
+
+       </div>
+       <div class="blog-post" id="18_mar">
+         <h2 class="blog-post-title">18 Maret</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Indonesia mengkonfirmasi 55 kasus baru infeksi COVID-19, sehingga totalnya mencapai 227 kasus.</li>
+           <li class="mb-3">12 pasien meninggal, jumlah kematian kini telah meningkat menjadi 19. Ke-19 kematian berarti bahwa Indonesia sekarang telah mencatat jumlah kematian tertinggi di antara negara-negara Asia Tenggara yang terkena virus corona sampai saat ini. Angka fatalitas kasus di Indonesia telah mencapai 8,37%, dua kali lipat dari tingkat fatalitas kasus dunia (4,07%). </li>
+           <li class="mb-3">7 orang Indonesia di India yang dinyatakan positif COVID-19 adalah bagian dari 10 anggota tim yang melakukan perjalanan ke Karimnagar untuk tur keagamaan.</li>
+           <li class="mb-3">Setelah 2 kasus positif, Gubernur Kalimantan Barat Sutarmidji menyatakan "peristiwa luar biasa" sampai pemberitahuan lebih lanjut.</li>
+
+         </ul>
+
+
+       </div>
+
+       <div class="blog-post" id="17_mar">
+         <h2 class="blog-post-title">17 Maret</h2>
+         <p class="blog-post-meta"><a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">2020 coronavirus pandemic in Indonesia</a></p>
+         <ul>
+           <li class="mb-3">Menanggapi meningkatnya jumlah kasus COVID-19 di Indonesia, Dewan Nasional Indonesia untuk Penanggulangan Bencana mengumumkan masa darurat selama 91 hari, efektif hingga 29 Mei 2020.</li>
+           <li class="mb-3">Pemerintah Indonesia mengumumkan 38 kasus baru COVID-19, sehingga jumlah total infeksi menjadi 172.</li>
+           <li class="mb-3">1 kasus pulih, total 9 kasus pulih.</li>
+           <li class="mb-3">2 pasien meninggal (1 di Semarang dan satu lainnya masih belum diketahui), total 7 kematian.</li>
+           <li class="mb-3">Ada kesalahan dalam penghitungan kematian. Menteri Kesehatan melaporkan bahwa jumlah total kematian masih 5, sama seperti pada 14 Maret sementara dua kematian baru dilaporkan pada pagi hari oleh Gubernur Jawa Tengah dan Gubernur Banten. Jumlah total kematian harus 7.</li>
+
+         </ul>
+
+
+       </div>
+
+
+
+     </div>
+
+     <aside class="col-md-2 blog-sidebar">
+
+
+       <div class="p-4">
+         <h4 class="font-italic">Archives</h4>
+         <ol class="list-unstyled mb-0">
+           <li><a href="#22_apr">22 April 2020</a></li>
+           <li><a href="#21_apr">21 April 2020</a></li>
+           <li><a href="#20_apr">20 April 2020</a></li>
+           <li><a href="#19_apr">19 April 2020</a></li>
+           <li><a href="#18_apr">18 April 2020</a></li>
+           <li><a href="#17_apr">17 April 2020</a></li>
+           <li><a href="#16_apr">16 April 2020</a></li>
+           <li><a href="#15_apr">15 April 2020</a></li>
+           <li><a href="#14_apr">14 April 2020</a></li>
+           <li><a href="#13_apr">13 April 2020</a></li>
+           <li><a href="#12_apr">12 April 2020</a></li>
+           <li><a href="#11_apr">11 April 2020</a></li>
+           <li><a href="#10_apr">10 April 2020</a></li>
+           <li><a href="#09_apr">09 April 2020</a></li>
+           <li><a href="#08_apr">08 April 2020</a></li>
+           <li><a href="#07_apr">07 April 2020</a></li>
+           <li><a href="#06_apr">06 April 2020</a></li>
+           <li><a href="#05_apr">05 April 2020</a></li>
+           <li><a href="#04_apr">04 April 2020</a></li>
+           <li><a href="#03_apr">03 April 2020</a></li>
+           <li><a href="#02_apr">02 April 2020</a></li>
+           <li><a href="#01_apr">01 April 2020</a></li>
+           <li><a href="#31_mar">31 Maret 2020</a></li>
+           <li><a href="#30_mar">30 Maret 2020</a></li>
+           <li><a href="#29_mar">29 Maret 2020</a></li>
+           <li><a href="#28_mar">28 Maret 2020</a></li>
+           <li><a href="#27_mar">27 Maret 2020</a></li>
+           <li><a href="#26_mar">26 Maret 2020</a></li>
+           <li><a href="#25_mar">25 Maret 2020</a></li>
+           <li><a href="#24_mar">24 Maret 2020</a></li>
+           <li><a href="#23_mar">23 Maret 2020</a></li>
+           <li><a href="#22_mar">22 Maret 2020</a></li>
+           <li><a href="#21_mar">21 Maret 2020</a></li>
+           <li><a href="#20_mar">20 Maret 2020</a></li>
+           <li><a href="#19_mar">19 Maret 2020</a></li>
+           <li><a href="#18_mar">18 Maret 2020</a></li>
+           <li><a href="#17_mar">17 Maret 2020</a></li>
+         </ol>
+       </div>
+
+     </aside>
+
+   </div>
+ </main>-->
+ <footer class="bd-footer text-muted bg-dark mt-5">
+   <div class="container-fluid p-3 p-md-5">
+     <p class="text-center d-block text-white">
+        수정사항이나 문의사항은 아래의 메일로 보내주시면 회신드리겠습니다. <br />
+         <a href="#">coronasee@gmail.com</a><br /><br />
+     </p>
+
+     <p class="text-center">
+       *주의: 저희 웹 사이트에서 제공하는 웹 사이트 정보는 인니 내 보건부 참조 및 관련 코로나 19 통계 사이트에서 업데이트했습니다.<br />
+       개인이 취합한 내용이므로 수치의 정확성에 대해 책임질 수 없으며, 공식적인 근거 자료로 활용될 수 없습니다. <br />
+       저희가 제공하는 내용의 인용과 사용에 대한 책임은 전적으로 인용자 및 사용자에게 있습니다.</p>
+   </div>
+ </footer>
+</body>
+</html>

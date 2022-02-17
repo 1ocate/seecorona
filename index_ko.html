@@ -1,0 +1,640 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+    location.href="/ko"
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160628674-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-160628674-1');
+    </script>
+    <script data-ad-client="ca-pub-2182311497739311" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="corona, indonesia, sembuh, positif, virus, corona19, status, corona-19, Kematian, Disembuhkan, Persentase Kematian, Telah Diperiksa, Diperiksa, Negatif, See Corona virus, corona today indonesia, Corona di Indonesia,kasus">
+    <meta name="description" content="Status update Virus Corona ( COVID -19) Pertama di Indonesia,  terdapat tabel dan informasi seputar situasi terkini yang membantu anda mengetahui status dan perkembangan Virus Corona ( COVID -19 ).">
+    <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
+    <meta http-equiv="Expires" content="-1">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+
+    <title>바이러스 코로나19 인도네시아 상황판</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        padding-top: 5rem;
+      }
+      .logo {margin-right:5px;}
+
+      .starter-template {
+        padding: 3rem 0rem;
+
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+      .red {
+        color:red;
+      }
+      .green {
+        color:green;
+      }
+      .from {
+        width:100%;
+        text-align: left;
+      }
+      .from a{
+        font-size:0.8em;
+        max-width:10px;
+        text-align: left;
+      }
+      .update {
+        font-size:1em;
+      }
+      img {width:100%;}
+      @media ( min-width: 768px ) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+      #num_box {
+        margin:50px 0;
+        display:flex;
+        flex-wrap: wrap;
+      }
+      #num_box div {
+        margin:20px 0;
+      }
+      #num_box .cor-4 {
+        flex: 0 0 25%;
+      }
+      #num_box .cor-3 {
+          flex: 0 0 33.33%;
+      }
+
+      #num_box .current {
+        font-size:2em;
+      }
+      #num_box .change {
+        font-size:1em;
+      }
+      #Sebaran { margin:0 auto; padding:0 -15px; max-width:500px;}
+      .chart_box {margin:50px 0; overflow:hidden; display:flex; flex-wrap: wrap;}
+      .chart_box div { margin:0 auto; flex: 0 0 33.3%;}
+
+      #barChart {margin-bottom:25px;}
+      #subChart {margin-bottom:25px;}
+      #table_div {margin:10px 0;}
+      #news {padding-top:40px;}
+      #data {padding-top:70px;}
+
+      }
+      @media ( max-width: 768px ) {
+
+        .navbar-nav
+        {
+          display:flex; !important;
+          flex-direction:row; !important;
+        }
+        .navbar-nav li
+        {
+          margin-left:10px;
+        }
+
+        #num_box {
+          padding:10px 0;
+          margin:0 -20px;
+          display: flex;
+          flex-wrap: wrap;
+          text-align:center;
+        }
+        #num_box div {
+          margin: 20px auto 0;
+        }
+        #num_box .title {
+          font-size:1em;
+        }
+        #num_box .current {
+          font-size:1.7em;
+        }
+        #num_box .change {
+          font-size:1em;
+        }
+
+        #num_box .cor-4 {
+          flex: 0 0 25%;
+          max-width:117px;
+        }
+        #num_box .cor-3 {
+            flex: 0 0 33.33%;
+        }
+        #num_box h3 {
+          text-align:center;
+          font-size:1.2em;
+        }
+        .chart_title {margin:40px 0;}
+        .chart_box {margin:0px 0;}
+        .chart_box div { margin:25px auto;}
+
+        #table_div {margin:25px 0;}
+        #news {margin-top:-30px; padding-top:50px;}
+
+      }
+    </style>
+    <!-- Custom styles for this template -->
+
+    <link rel="stylesheet" href="css/billboard.min.css">
+
+
+
+    <!--Load the AJAX API-->
+    <script src="js/billboard.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['table']});
+      google.charts.setOnLoadCallback(drawTable);
+
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', '주도(지방)');
+        data.addColumn('string', '시');
+        data.addColumn('number', '확진자');
+        data.addColumn('number', '사망자');
+        data.addColumn('number', '격리해제');
+
+        data.addRows([
+          ['DKI Jakarta', '', {v: 47}, {v: 1}, {v: 1}],
+          ['Jawa Barat',  'Kabupaten Bekasi<br/>Kabupaten Cirebon<br/>Kabupaten Purwakarta<br/>Kota Bandung<br/>Kota Depok', {v: 10}, {v: 2}, {v: 2}],
+          ['Banten',  '', {v: 5}, {v: 1}, {v: 0}],
+          ['Jawa Tengah',  'Kota Surakarta', {v: 6}, {v: 2}, {v: 0}],
+          ['Kalimantan Barat',  'Kota Pontianak', {v: 1}, {v: 0}, {v: 0}],
+          ['Sulawesi Utara',  'Kota Manado', {v: 1}, {v: 0}, {v: 0}],
+          ['Bali', '', {v: 1}, {v: 1}, {v: 0}],
+          ['Daerah Istimewa Yogyakarta',  '', {v: 1}, {v: 0}, {v: 0}],
+          ['Jawa Timur',  '', {v: 1}, {v: 0}, {v: 0}],
+          ['Kepulauan Riau',  '', {v: 1}, {v: 0}, {v: 0}],
+          ['Repatriated',  '', {v: 1}, {v: 0}, {v: 1}],
+          ['Tidak diungkapkan',  '', {v: 92}, {v: 0}, {v: 5}],
+        ]);
+
+        var table = new google.visualization.Table(document.getElementById('Sebaran'));
+
+        table.draw(data, {allowHtml: true, showRowNumber: true, width: '100%', height: '100%'});
+      }
+    </script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['table']});
+      google.charts.setOnLoadCallback(drawTable);
+
+      function drawTable() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Kasus Ke');
+        data.addColumn('string', 'Jenis Kelamin');
+        data.addColumn('string', 'Umur');
+        data.addColumn('string', 'Identitas');
+        data.addColumn('string', 'Status Kondisi');
+
+        data.addRows([
+          ['Kasus 50',  'Pria', '59', 'WNI', '<span class="red">Mati</span>'],
+          ['Kasus 36',  'Wanita', '37', 'WNI', '<span class="red">Mati</span>'],
+          ['Kasus 35',  'Wanita', '57', 'WNI', '<span class="red">Mati</span>'],
+          ['Kasus 19',  'Pria', '40', 'WNI', '<span class="green">Pulih</span>'],
+          ['Kasus 14',  'Pria', '50', 'WNI', '<span class="green">Pulih</span>'],
+          ['Kasus 06',  'Pria', '39', 'WNI', '<span class="green">Pulih</span>'],
+          ['Kasus 25',  'Wanita', '53', 'WNA', '<span class="red">Mati</span>'],
+          ['Kasus 02',  'Wanita', '64', 'WNI', '<span class="green">Pulih</span>'],
+          ['Kasus 01',  'Wanita', '31', 'WNI', '<span class="green">Pulih</span>']
+        ]);
+
+        var table = new google.visualization.Table(document.getElementById('table_div'));
+
+        table.draw(data, {allowHtml: true, showRowNumber: true, width: '100%', height: '100%'});
+      }
+    </script>
+    <script>
+
+      if (window.XMLHttpRequest) {
+        // code for IE7+, Firefox, Chrome, Opera, Safari
+        xmlhttp=new XMLHttpRequest();
+      } else {  // code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      xmlhttp.onreadystatechange=function() {
+        if (this.readyState==4 && this.status==200) {
+          document.getElementById("rssOutput").innerHTML=this.responseText;
+        }
+      }
+      xmlhttp.open("GET","getress.php?q=Google",true);
+      xmlhttp.send();
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="./js/bootstrap.min.js" ></script>
+    <script type = "text/javascript" language = "javascript">
+       $(document).ready(function() {
+         $.ajax({
+              cache: false,
+              url: "./csv/number_status.json",
+              dataType: "json",
+              success: function(status){
+                 $('#positif').text(status.positif);
+                 $('#positif_p').text('+'+status.positif_p);
+                 $('#sembuh').text(status.sembuh);
+                 $('#sembuh_p').text('+'+status.sembuh_p);
+                 $('#kematian').text(status.kematian);
+                 $('#kematian_p').text('+'+status.kematian_p);
+                 $('#p_kematian').text((status.kematian/status.positif*100).toFixed(1)+'%');
+                 $('#update').text(status.date+' Update');
+               }
+          });
+          $.ajax({
+                cache: false,
+                url: "./csv/number_status_kem.json",
+                dataType: "json",
+                success: function(kem){
+                   $('#t_diperiksa').text(kem.t_diperiksa);
+                   $('#negatif').text(kem.negatif);
+                   $('#s_diperiksa').text(kem.s_diperiksa);
+                 }
+            });
+
+       });
+    </script>
+
+ </head>
+  <body data-spy="scroll" data-target="#navbar1" data-offset="0">
+  <nav id="navbar1" class="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top">
+  <span class="logo"><a class="navbar-brand" href="/"><img src="./favicon/favicon-32x32.png" alt="logo"></a></span>
+  <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault"> -->
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#news">뉴스</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#data">차트</a>
+      </li>
+      <!--<li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown01">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>-->
+    </ul>
+    <button class="btn btn-secondary my-2 my-sm-0" onclick="location.href='/';">Bahasa</button>
+    <!--<form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+      <button class="btn btn-secondary my-2 my-sm-0" type="submitd">Search</button>
+    </form>-->
+  </div>
+</nav>
+
+<main role="main" class="container">
+
+  <div class="starter-template">
+    <h1 class="text-center">인도네시아 코로나19 <br/> 상황판</h1>
+    <p id="update" class="update text-center">2020-03-17 01:00 WIB Update </p>
+   <!-- <div id="chart_div"></div>-->
+   <div id="num_box" >
+     <div class="cor-4 text-center" id="num_positive">
+       <h3 class="title">확진자</h3>
+       <span id="positif" class="current">-</span></br>
+       <span id="positif_p" class="red change">-</span>
+     </div>
+     <div class="cor-4 text-center" id="num_death">
+       <h3 class="title">사망자</h3>
+       <span id="kematian" class="red current">-</span></br>
+       <span id="kematian_p" class="red change">-</span>
+     </div>
+     <div class="cor-4 text-center" id="num_complte">
+       <h3 class="title">격리해제</h3>
+       <span id="sembuh" class="current green">-</span></br>
+       <span id="sembuh_p" class="green change">-</span>
+
+     </div>
+     <div class="cor-4 text-center" id="num_death">
+       <h3 class="title">사망률</h3>
+       <span id="p_kematian" class="current">-</span>
+     </div>
+     <div class="cor-3 text-center" id="num_check">
+       <h3 class="title" >총검사자</h3>
+       <span id="t_diperiksa" class="current">-</span>
+     </div>
+     <div class="cor-3 text-center" id="num_checking">
+       <h3  class="title">검사중</h3>
+       <span id="s_diperiksa" class="current">-</span>
+     </div>
+     <div class="cor-3 text-center" id="num_negative">
+       <h3 class="title">결과음성</h3>
+       <span id="negatif" class="current">-</span>
+     </div>
+
+  </div>
+  <h2 class="chart_title text-center"> 인도네시아 COVID-19 지역 분포 </h2>
+  <div>
+    <img src="country-5.png" alt="20-03-15">
+    <!--<p>Jakarta, Provinsi Banten (Kota Tangerang), Jawa Barat (Kota Depok dan Bandung), Jawa Tengah (Kota Surakarta), Yogyakarta, Bali, Sulawesi Utara (Kota Manado), dan Kalimantan Barat (Kota Pontianak)</p>-->
+
+  </div>
+  <div id="Sebaran"></div>
+  <p class="my-3 text-center d-block">* Updated 17 Mar 2020 </p>
+</div>
+  <div class="my-3 p-3 bg-white rounded shadow-sm">
+    <p class="from">
+        * Data from: </br>
+        <a href="https://infeksiemerging.kemkes.go.id" target="_blank">infeksiemerging.kemkes.go.id</a> <br />
+        <a href="https://en.m.wikipedia.org/wiki/2020_coronavirus_pandemic_in_Indonesia" target="_blank">en.m.wikipedia.org/wiki/2020 coronavirus pandemic in Indonesia</a> <br />
+        <a href="https://id.wikipedia.org/wiki/Pandemi_koronavirus_di_Indonesia" target="_blank">id.wikipedia.org/wiki/Pandemi koronavirus di Indonesia</a> <br />
+        <a href="https://coronaboard.kr" target="_blank">coronaboard.kr</a> <br />
+    </p>
+  </div>
+</main><!-- /.container -->
+
+<main role="news" id="news" class="container">
+
+
+  <div class="my-3 p-3 bg-white rounded shadow-sm">
+    <h2 class="border-bottom border-gray pb-2 mb-0">현지 최신뉴스</h2>
+    <div class="text-muted pt-3" >
+      <div class="text-left" id="rssOutput"></div>
+    </div>
+
+  </div>
+
+ </main>
+ <main role="data" id="data" class="container">
+   <h2 class="chart_title text-center"> 확진자 - 사망자 </h2>
+   <div class="chart_box">
+     <div id="donutChart"></div>
+     <script>
+     var chart = bb.generate({
+       data: {
+         columns: [
+         ["Negatif", 1083],
+         ["Positif", 172],
+         ["Diperiksa", 0]],
+
+         type: "donut",
+         colors: {
+           Positive: "#dc3545",
+           Negatif: "#28a745",
+           Diperiksa: "ffc107"
+         }
+       },
+       donut: {
+         title: "확진 비율",
+         label: {
+           format: function (value, ratio, id) {
+             var ratio = ratio*100;
+             return id +"\n"+ratio.toFixed(1)+"%";
+           }
+         }
+       },
+
+       bindto: "#donutChart"
+     });
+     </script>
+     <div id="donutChart2"></div>
+     <script>
+     var chart = bb.generate({
+       data: {
+         url: "./csv/id_positive.csv",
+         type: "donut",
+         colors: {
+           Mati: "#dc3545",
+           Pulih: "#28a745",
+           Perawatan: "ffc107"
+         }
+       },
+       donut: {
+         title: "확진자 상태",
+         label: {
+           format: function (value, ratio, id) {
+             var ratio = ratio*100;
+             return id +"\n"+ratio.toFixed(1)+"%";
+           }
+         }
+       },
+       bindto: "#donutChart2"
+     });
+     </script>
+   </div>
+   <h2 class="chart_title text-center"> 남녀 비율 </h2>
+   <div class="chart_box">
+     <div id="donutChart3"></div>
+     <script>
+     var chart = bb.generate({
+       data: {
+         url: "./csv/id_gender.csv",
+         type: "donut",
+         colors: {
+           /*Man: "#000000",
+           Woman: "#fd7e14",*/
+         }
+       },
+       donut: {
+         title: "Positif",
+         label: {
+           format: function (value, ratio, id) {
+             var ratio = ratio*100;
+             return id+"\n"+value+"\n"+"("+ratio.toFixed(1)+"%)";
+           }
+         }
+       },
+       bindto: "#donutChart3"
+     });
+     </script>
+     <div id="donutChart4"></div>
+     <script>
+     var chart = bb.generate({
+       data: {
+         url: "./csv/id_gender_cure.csv",
+         type: "donut"
+       },
+       donut: {
+         title: "Disembuhkan",
+         label: {
+           format: function (value, ratio, id) {
+             var ratio = ratio*100;
+             return id+"\n"+value+"\n"+"("+ratio.toFixed(1)+"%)";
+           }
+         }
+       },
+       bindto: "#donutChart4"
+     });
+     </script>
+     <div id="donutChart5"></div>
+     <script>
+     var chart = bb.generate({
+       data: {
+         url: "./csv/id_gender_death.csv",
+
+         type: "donut"
+       },
+       donut: {
+         title: "Kematian",
+         label: {
+           format: function (value, ratio, id) {
+             var ratio = ratio*100;
+             return id+"\n"+value+"\n"+"("+ratio.toFixed(1)+"%)";
+           }
+         }
+       },
+       bindto: "#donutChart5"
+     });
+     </script>
+   </div>
+   <h2 class="chart_title text-center"> 연령별 확진자 상황 </h2>
+   <div id="barChart"></div>
+   <script>
+     var chart = bb.generate({
+
+     data: {
+       x: "term",
+       url: "./csv/age.csv",
+       type: "bar",
+       colors: {
+         Positif: "#ff0000"
+       },
+       labels: true
+     },
+     bar: {
+
+       width: {
+         ratio: 0.8
+       }
+     },
+     axis: {
+       x: {
+         type: "category"
+       }
+     },
+     grid: {
+       x: {
+         show: true
+       },
+       y: {
+         show: true
+       }
+     },
+     tooltip: {
+       show: false
+     },
+     legend: {
+       show: false
+     },
+     bindto: "#barChart"
+   });
+
+   </script>
+   <h2 class="chart_title text-center"> 일일 확진자 증가 추이 </h2>
+   <div id="subChart"></div>
+   <script>
+   var chart = bb.generate({
+   data: {
+     x: "date",
+     url: "./csv/date.csv",
+   type: "bar",
+   labels: true
+   },
+   bar: {
+     width: {
+       ratio: 0.4
+     }
+   },
+   axis: {
+     x: {
+       type: "timeseries"
+     }
+   },
+     subchart: {
+       show: true
+     },
+     grid: {
+       x: {
+         show: true
+       },
+       y: {
+         show: true
+       }
+     },
+     tooltip: {
+       show: false
+     },
+     legend: {
+       show: false
+     },
+     bindto: "#subChart"
+     });
+   </script>
+   <h2 class="chart_title text-center"> 확진자 중 사망자 및 격리해제 </h2>
+   <div id="table_div"></div>
+   </div>
+
+ </main>
+ <footer class="bd-footer text-muted bg-dark">
+   <div class="container-fluid p-3 p-md-5">
+     <p class="text-center d-block text-white">
+       이메일로 제보 & 잘못된 정보 정정 요청 받습니다. <br/>
+
+       <a href="#">coronasee@gmail.com</a><br /><br />
+
+
+       *주의 :이 웹 사이트에서 제공하는 웹 사이트 정보를 보건부 참조 링크 에서 업데이트했습니다. 또는 국내 및 국제 웹 사이트를 참조하십시오. <br />
+
+         인용 / 타사 뉴스 링크가 전적으로 Google의 책임 외부에 있음을 인증합니다.
+
+     </p>
+   </div>
+ </footer>
+</body>
+</html>
